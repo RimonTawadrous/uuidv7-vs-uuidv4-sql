@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  mysql:
+    # image name to pull from docker hub
+    image: mysql:8.0-debian
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - 13306:3306
+    volumes:
+      - mysql-db:/var/lib/mysql
+    container_name: experement_db
+
+
+volumes:
+  mysql-db: {}
+
+# mysql -u root -p
