@@ -86,9 +86,7 @@ func (this *UuidV4Experiment) worker(db *sql.DB, count int, workerIndex int, don
 			periodInsertionMiliSecondsSum = 0
 		}
 	}
-
 	resultsChan <- WorkerResult{TotalMilliSeconds: totalMilliSeconds, CollesionCount: collesionCount}
-
 }
 
 func generateUUIDv4() string {

@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docker-compose": "^0.24.3",
+    "mysql2": "^3.6.5",
+    "uuid": "^9.0.1",
+    "uuid-parse": "^1.1.0",
+    "uuidv7": "^0.6.3"
+  }
+}
