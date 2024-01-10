@@ -1,5 +1,7 @@
 const { uuidv7 } = require("uuidv7");
 
+const insertQuery = `INSERT INTO chat_messages (id, chat_id, sender_id, message) VALUES (UNHEX(?), UNHEX(?), UNHEX(?), ?)`;
+
 let totalMilliSeconds = 0.0;
 let collesionCount = 0;
 async function insertRecords(connection, count) {
@@ -9,13 +11,13 @@ async function insertRecords(connection, count) {
   let startTime;
   let endTime;
   for (let i = 0; i <= count; i++) {
-    const insertQuery = `INSERT INTO orders (id, price, user_id) VALUES (UNHEX(?), ?, ?)`;
     let id = uuidv7().replace(/-/g, "");
-    const price = Math.random() * 100; // Generate random price
-    const userId = Math.floor(Math.random() * 100) + 1; // Assuming 100 users
+    let chat_id = uuidv7().replace(/-/g, "");
+    let sender_id = uuidv7().replace(/-/g, "");
+    const message = "Hello World";
     try {
       startTime = performance.now();
-      await connection.query(insertQuery, [id, price, userId]);
+      await connection.query(insertQuery, [id, chat_id, sender_id, message]);
     } catch (e) {
       try {
         await connection.rollback(); // Rollback in case of errors
@@ -39,18 +41,9 @@ async function insertRecords(connection, count) {
     }
   }
   console.log("All records inserted successfully!");
-}
-
-function getTotalInsertionTime() {
-  return totalMilliSeconds;
-}
-
-function getCollesionCount() {
-  return collesionCount;
+  return { totalMilliSeconds, collesionCount };
 }
 
 module.exports = {
   insertRecords,
-  getTotalInsertionTime,
-  getCollesionCount,
 };

@@ -4,7 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"math/rand"
 	"strings"
 	"sync"
 	"time"
@@ -13,7 +12,7 @@ import (
 	"github.com/google/uuid"
 )
 
-const insertQuery = "INSERT INTO orders (id, price, user_id) VALUES (UNHEX(?), ?, ?)"
+const insertQuery = `INSERT INTO chat_messages (id, chat_id, sender_id, message) VALUES (UNHEX(?), UNHEX(?), UNHEX(?), ?)`
 
 type UuidV7Experiment struct {
 }
@@ -63,11 +62,12 @@ func (this *UuidV7Experiment) worker(db *sql.DB, count int, workerIndex int, don
 
 	for i := 0; i <= count; i++ {
 		id := generateUUIDv7()
-		price := rand.Float64() * 100 // Generate random price
-		userID := rand.Intn(100) + 1  // Assuming 100 users
+		chat_id := generateUUIDv7()
+		sender_id := generateUUIDv7()
+		const message = "Hello World!"
 
 		startTime = time.Now()
-		_, err := db.Exec(insertQuery, id, price, userID)
+		_, err := db.Exec(insertQuery, id, chat_id, sender_id, message)
 		if err != nil {
 			// Rollback in case of errors
 			db.Exec("ROLLBACK")

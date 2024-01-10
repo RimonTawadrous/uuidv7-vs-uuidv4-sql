@@ -106,12 +106,13 @@ func connectToDB() *sql.DB {
 
 func createTableWithIdUUIDBinary(db *sql.DB) {
 	createTableQuery := `
-		CREATE TABLE IF NOT EXISTS orders (
-			id BINARY(16) PRIMARY KEY,
-			price DECIMAL(10,2) NOT NULL,
-			created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-			user_id INT NOT NULL
-		)`
+	CREATE TABLE IF NOT EXISTS chat_messages (
+	  id BINARY(16) PRIMARY KEY,
+	  chat_id BINARY(16) PRIMARY KEY,
+	  sender_id BINARY(16) PRIMARY KEY,
+	  message VARCHAR(255) NOT NULL
+	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	)`
 	_, err := db.Exec(createTableQuery)
 	if err != nil {
 		log.Fatal("Error creating table with Int:", err)
@@ -120,12 +121,13 @@ func createTableWithIdUUIDBinary(db *sql.DB) {
 
 func createTableWithIdInt(db *sql.DB) {
 	createTableQuery := `
-		CREATE TABLE IF NOT EXISTS orders (
-			id INT PRIMARY KEY AUTO_INCREMENT,
-			price DECIMAL(10,2) NOT NULL,
-			created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-			user_id INT NOT NULL
-		)`
+	CREATE TABLE IF NOT EXISTS chat_messages (
+	  id INT PRIMARY KEY AUTO_INCREMENT,
+	  chat_id INT PRIMARY KEY,
+	  sender_id INT PRIMARY KEY,
+	  message VARCHAR(255) NOT NULL
+	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	)`
 	_, err := db.Exec(createTableQuery)
 	if err != nil {
 		log.Fatal("Error creating table with Int:", err)

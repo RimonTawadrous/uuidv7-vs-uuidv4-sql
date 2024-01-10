@@ -11,7 +11,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-const insertQuery = "INSERT INTO orders (price, user_id) VALUES (?, ?)"
+const insertQuery = `INSERT INTO chat_messages (chat_id, sender_id, message) VALUES (?, ?, ?)`
 
 type IntExprement struct {
 }
@@ -60,11 +60,12 @@ func (this *IntExprement) worker(db *sql.DB, count int, workerIndex int, done ch
 	var startTime, endTime time.Time
 
 	for i := 0; i <= count; i++ {
-		price := rand.Float64() * 100 // Generate random price
-		userID := rand.Intn(100) + 1  // Assuming 100 users
+		chat_id := rand.Intn(100) + 1
+		sender_id := rand.Intn(100) + 1
+		const message = "Hello World"
 
 		startTime = time.Now()
-		_, err := db.Exec(insertQuery, price, userID)
+		_, err := db.Exec(insertQuery, chat_id, sender_id, message)
 		if err != nil {
 			// Rollback in case of errors
 			db.Exec("ROLLBACK")

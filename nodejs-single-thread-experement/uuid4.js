@@ -1,9 +1,10 @@
 const crypto = require("crypto");
 
-let totalMilliSeconds = 0.0;
-let collesionCount = 0;
+const insertQuery = `INSERT INTO chat_messages (id, chat_id, sender_id, message) VALUES (UNHEX(?), UNHEX(?), UNHEX(?), ?)`;
 
 async function insertRecords(connection, count) {
+  let totalMilliSeconds = 0.0;
+  let collesionCount = 0;
   let totalRecords = 0;
   let periodInsertionMiliSecondsSum = 0;
   let insertionTime;
@@ -11,13 +12,14 @@ async function insertRecords(connection, count) {
   let endTime;
 
   for (let i = 0; i <= count; i++) {
-    const insertQuery = `INSERT INTO orders (id, price, user_id) VALUES (UNHEX(?), ?, ?)`;
     const id = crypto.randomUUID().replace(/-/g, "");
-    const price = Math.random() * 100; // Generate random price
-    const userId = Math.floor(Math.random() * 100) + 1; // Assuming 100 users
+    const chat_id = crypto.randomUUID().replace(/-/g, "");
+    const sender_id = crypto.randomUUID().replace(/-/g, "");
+    const message = "Hello World";
+
     try {
       startTime = performance.now();
-      await connection.query(insertQuery, [id, price, userId]);
+      await connection.query(insertQuery, [id, chat_id, sender_id, message]);
     } catch (e) {
       try {
         await connection.rollback(); // Rollback in case of errors
@@ -42,18 +44,9 @@ async function insertRecords(connection, count) {
     }
   }
   console.log("All records inserted successfully!");
-}
-
-function getTotalInsertionTime() {
-  return totalMilliSeconds;
-}
-
-function getCollesionCount() {
-  return collesionCount;
+  return { totalMilliSeconds, collesionCount };
 }
 
 module.exports = {
   insertRecords,
-  getTotalInsertionTime,
-  getCollesionCount,
 };

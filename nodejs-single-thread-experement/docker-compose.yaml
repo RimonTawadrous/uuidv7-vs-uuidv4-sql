@@ -16,7 +16,7 @@ services:
       - 13306:3306
     volumes:
       - mysql-db:/var/lib/mysql
-    container_name: school_db_mysql
+    container_name: experiment_db
 
 
 volumes:

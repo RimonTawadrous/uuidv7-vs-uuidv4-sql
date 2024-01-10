@@ -1,9 +1,10 @@
 const mysql = require("mysql2/promise");
 
-let totalMilliSeconds = 0.0;
-let collesionCount = 0;
+const insertQuery = `INSERT INTO chat_messages (chat_id, sender_id, message) VALUES (?, ?, ?)`;
 
 async function insertRecords(connection, count) {
+  let totalMilliSeconds = 0.0;
+  let collesionCount = 0;
   let totalRecords = 0;
   let periodInsertionMiliSecondsSum = 0;
   let insertionTime;
@@ -11,12 +12,13 @@ async function insertRecords(connection, count) {
   let endTime;
 
   for (let i = 0; i <= count; i++) {
-    const insertQuery = `INSERT INTO orders ( price, user_id) VALUES (?, ?)`;
-    const price = Math.random() * 100; // Generate random price
-    const userId = Math.floor(Math.random() * 100) + 1; // Assuming 100 users
+    const chat_id = Math.floor(Math.random() * 100) + 1; // Assuming 100 users
+    const sender_id = Math.floor(Math.random() * 100) + 1; // Assuming 100 users
+    const message = "Hello World";
+
     try {
       startTime = performance.now();
-      await connection.query(insertQuery, [price, userId]);
+      await connection.query(insertQuery, [chat_id, sender_id, message]);
     } catch (e) {
       try {
         await connection.rollback(); // Rollback in case of errors
@@ -40,18 +42,9 @@ async function insertRecords(connection, count) {
     }
   }
   console.log("All records inserted successfully!");
-}
-
-function getTotalInsertionTime() {
-  return totalMilliSeconds;
-}
-
-function getCollesionCount() {
-  return collesionCount;
+  return { totalMilliSeconds, collesionCount };
 }
 
 module.exports = {
   insertRecords,
-  getTotalInsertionTime,
-  getCollesionCount,
 };

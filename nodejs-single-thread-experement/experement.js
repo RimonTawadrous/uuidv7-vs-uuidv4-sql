@@ -15,7 +15,7 @@ const CONNECTION_CONFIGS = {
   database: "db",
 };
 
-const volumeName = "code_mysql-db"; // Replace with the actual volume name
+const volumeName = "nodejs-single-thread-experement_mysql-db"; // Replace with the actual volume name
 
 async function startDocker() {
   console.log("Starting docker...");
@@ -48,22 +48,24 @@ async function deleteDockervolume() {
 
 async function createTableWithIdUUIDBianry(connection) {
   const createTableQuery = `
-      CREATE TABLE IF NOT EXISTS orders (
+      CREATE TABLE IF NOT EXISTS chat_messages (
         id BINARY(16) PRIMARY KEY,
-        price DECIMAL(10,2) NOT NULL,
+        chat_id BINARY(16) PRIMARY KEY,
+        sender_id BINARY(16) PRIMARY KEY,
+        message VARCHAR(255) NOT NULL
         created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-        user_id INT NOT NULL
       )`;
   return await connection.execute(createTableQuery);
 }
 
 function createTableWithIdInt(connection) {
   const createTableQuery = `
-      CREATE TABLE IF NOT EXISTS orders (
+      CREATE TABLE IF NOT EXISTS chat_messages (
         id INT PRIMARY KEY AUTO_INCREMENT,
-        price DECIMAL(10,2) NOT NULL,
+        chat_id INT PRIMARY KEY,
+        sender_id INT PRIMARY KEY,
+        message VARCHAR(255) NOT NULL
         created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-        user_id INT NOT NULL
       )`;
   return connection.execute(createTableQuery);
 }
@@ -74,10 +76,13 @@ async function doUUIDV4Experiment() {
   await createTableWithIdUUIDBianry(connection);
 
   console.log("Starting UUIDV4 insertions....");
-  await uuidV4Experiment.insertRecords(connection, NUMBER_OF_RECORDS_TO_INSERT);
-  const uuidV4Time = uuidV4Experiment.getTotalInsertionTime();
-  const uuidV4CollesionCount = uuidV4Experiment.getCollesionCount();
-
+  const {
+    totalMilliSeconds: uuidV4Time,
+    collesionCount: uuidV4CollesionCount,
+  } = await uuidV4Experiment.insertRecords(
+    connection,
+    NUMBER_OF_RECORDS_TO_INSERT
+  );
   console.log(
     "UIID V4: Total insertion time",
     uuidV4Time,
@@ -95,9 +100,13 @@ async function doUUIDV7Experiment() {
   await createTableWithIdUUIDBianry(connection);
 
   console.log("Starting UUIDV7 insertions.....");
-  await uuidV7Experiment.insertRecords(connection, NUMBER_OF_RECORDS_TO_INSERT);
-  const uuidV7Time = uuidV7Experiment.getTotalInsertionTime();
-  const uuidV7CollesionCount = uuidV7Experiment.getCollesionCount();
+  const {
+    totalMilliSeconds: uuidV7Time,
+    collesionCount: uuidV7CollesionCount,
+  } = await uuidV7Experiment.insertRecords(
+    connection,
+    NUMBER_OF_RECORDS_TO_INSERT
+  );
 
   console.log(
     "UIID V7: Total insertion time",
@@ -116,9 +125,9 @@ async function doIntExperiment() {
   await createTableWithIdInt(connection);
 
   console.log("Starting INT insertions....");
-  await intExperiment.insertRecords(connection, NUMBER_OF_RECORDS_TO_INSERT);
-  const intTime = intExperiment.getTotalInsertionTime();
-  const intCollesionCount = intExperiment.getCollesionCount();
+  const { totalMilliSeconds: intTime, collesionCount: intCollesionCount } =
+    await intExperiment.insertRecords(connection, NUMBER_OF_RECORDS_TO_INSERT);
+
   console.log(
     "Int Id: Total insertion time",
     intTime,
