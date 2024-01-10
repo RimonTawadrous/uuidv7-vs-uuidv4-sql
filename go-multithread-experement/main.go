@@ -110,7 +110,7 @@ func createTableWithIdUUIDBinary(db *sql.DB) {
 	  id BINARY(16) PRIMARY KEY,
 	  chat_id BINARY(16) PRIMARY KEY,
 	  sender_id BINARY(16) PRIMARY KEY,
-	  message VARCHAR(255) NOT NULL
+	  message VARCHAR(255) NOT NULL,
 	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	)`
 	_, err := db.Exec(createTableQuery)
@@ -125,7 +125,7 @@ func createTableWithIdInt(db *sql.DB) {
 	  id INT PRIMARY KEY AUTO_INCREMENT,
 	  chat_id INT PRIMARY KEY,
 	  sender_id INT PRIMARY KEY,
-	  message VARCHAR(255) NOT NULL
+	  message VARCHAR(255) NOT NULL,
 	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	)`
 	_, err := db.Exec(createTableQuery)

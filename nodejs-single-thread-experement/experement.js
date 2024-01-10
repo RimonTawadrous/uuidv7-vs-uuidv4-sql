@@ -52,7 +52,7 @@ async function createTableWithIdUUIDBianry(connection) {
         id BINARY(16) PRIMARY KEY,
         chat_id BINARY(16) PRIMARY KEY,
         sender_id BINARY(16) PRIMARY KEY,
-        message VARCHAR(255) NOT NULL
+        message VARCHAR(255) NOT NULL,
         created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
       )`;
   return await connection.execute(createTableQuery);
@@ -64,7 +64,7 @@ function createTableWithIdInt(connection) {
         id INT PRIMARY KEY AUTO_INCREMENT,
         chat_id INT PRIMARY KEY,
         sender_id INT PRIMARY KEY,
-        message VARCHAR(255) NOT NULL
+        message VARCHAR(255) NOT NULL,
         created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
       )`;
   return connection.execute(createTableQuery);
