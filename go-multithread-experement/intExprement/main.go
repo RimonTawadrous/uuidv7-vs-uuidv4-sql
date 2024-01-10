@@ -80,7 +80,7 @@ func (this *IntExprement) worker(db *sql.DB, count int, workerIndex int, done ch
 
 		totalRecords++
 		if i > 0 && i%10000 == 0 {
-			fmt.Printf("worker %d UUIDV4: Inserted 10000 records in %.2fms %d/%d\n", workerIndex, periodInsertionMiliSecondsSum, i, count)
+			fmt.Printf("worker %d UUIDV7: Inserted 10000 records in %.2fms %d/%d\n", workerIndex, periodInsertionMiliSecondsSum, i, count)
 			periodInsertionMiliSecondsSum = 0
 		}
 	}
