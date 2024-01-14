@@ -19,7 +19,7 @@ const (
 	volumeName  = "go-multithread-experement_mysql-db"
 
 	dbConnectionString      = "user:password@tcp(localhost:13306)/db"
-	numberOfRecordsToInsert = 100000
+	numberOfRecordsToInsert = 5000000
 	numberOfWorkers         = 10
 )
 
@@ -108,10 +108,10 @@ func createTableWithIdUUIDBinary(db *sql.DB) {
 	createTableQuery := `
 	CREATE TABLE IF NOT EXISTS chat_messages (
 	  id BINARY(16) PRIMARY KEY,
-	  chat_id BINARY(16) PRIMARY KEY,
-	  sender_id BINARY(16) PRIMARY KEY,
+	  chat_id BINARY(16),
+	  sender_id BINARY(16),
 	  message VARCHAR(255) NOT NULL,
-	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 	)`
 	_, err := db.Exec(createTableQuery)
 	if err != nil {
@@ -123,10 +123,10 @@ func createTableWithIdInt(db *sql.DB) {
 	createTableQuery := `
 	CREATE TABLE IF NOT EXISTS chat_messages (
 	  id INT PRIMARY KEY AUTO_INCREMENT,
-	  chat_id INT PRIMARY KEY,
-	  sender_id INT PRIMARY KEY,
+	  chat_id INT,
+	  sender_id INT,
 	  message VARCHAR(255) NOT NULL,
-	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 	)`
 	_, err := db.Exec(createTableQuery)
 	if err != nil {

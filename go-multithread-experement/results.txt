@@ -1,0 +1,1814 @@
+
+// Starting experiment
+// Cleaning up from previous runs...
+// ------------------------------------------------------------
+// Starting UUIDV4 experiment...
+// Stopping Docker Compose...
+// Stopping experiment_db ... done
+// Removing experiment_db ... done
+// Removing network go-multithread-experement_default
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// Starting Docker Compose...
+// Creating network "go-multithread-experement_default" with the default driver
+// Creating volume "go-multithread-experement_mysql-db" with default driver
+// Creating experiment_db ... done
+// Waiting for MySQL service to be ready[mysql] 2024/01/10 21:39:32 packets.go:37: unexpected EOF
+// [mysql] 2024/01/10 21:39:32 packets.go:37: unexpected EOF
+// [mysql] 2024/01/10 21:39:32 packets.go:37: unexpected EOF
+// Docker Compose started
+// Starting UUIDV4 insertions....
+// worker 9 UUIDV4: Inserted 10000 records in 273587.14ms 10000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 273699.33ms 10000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 273941.43ms 10000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 274349.04ms 10000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 274425.93ms 10000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 274525.42ms 10000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 274829.42ms 10000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 275022.56ms 10000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 275179.41ms 10000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 275511.78ms 10000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 385077.91ms 20000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 385563.14ms 20000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 385962.08ms 20000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 385845.71ms 20000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 385747.52ms 20000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 385819.20ms 20000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 386688.14ms 20000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 386047.36ms 20000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 386321.84ms 20000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 386951.19ms 20000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 386308.81ms 30000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 387520.88ms 30000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 386596.52ms 30000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 386943.31ms 30000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 386724.74ms 30000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 388031.84ms 30000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 386610.55ms 30000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 387482.95ms 30000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 387806.82ms 30000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 388116.48ms 30000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 388389.80ms 40000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 389302.64ms 40000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 390181.26ms 40000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 389644.28ms 40000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 389766.09ms 40000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 389768.71ms 40000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 389781.98ms 40000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 389708.23ms 40000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 390149.91ms 40000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 389800.88ms 40000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 391714.38ms 50000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 392534.14ms 50000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 392734.23ms 50000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 392057.10ms 50000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 391884.54ms 50000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 391207.75ms 50000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 392216.61ms 50000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 391343.20ms 50000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 393434.09ms 50000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 394314.21ms 50000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 393133.35ms 60000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 393834.70ms 60000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 394671.61ms 60000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 393115.17ms 60000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 394787.60ms 60000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 394408.12ms 60000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 393908.24ms 60000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 395104.42ms 60000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 394606.24ms 60000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 394594.90ms 60000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 395676.71ms 70000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 397047.08ms 70000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 397660.44ms 70000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 397407.18ms 70000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 397253.10ms 70000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 397550.49ms 70000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 396305.30ms 70000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 396942.36ms 70000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 397887.02ms 70000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 397114.80ms 70000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 400595.82ms 80000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 400568.78ms 80000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 401501.59ms 80000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 401646.39ms 80000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 401462.79ms 80000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 400651.15ms 80000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 400574.29ms 80000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 400515.04ms 80000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 401585.36ms 80000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 403022.83ms 80000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 403618.89ms 90000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 404341.41ms 90000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 404283.34ms 90000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 404189.09ms 90000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 405067.69ms 90000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 404051.36ms 90000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 403177.39ms 90000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 403966.12ms 90000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 404227.11ms 90000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 403652.67ms 90000/100000
+// worker 8 UUIDV4: Inserted 10000 records in 404873.61ms 100000/100000
+// worker 2 UUIDV4: Inserted 10000 records in 404509.61ms 100000/100000
+// worker 0 UUIDV4: Inserted 10000 records in 405269.57ms 100000/100000
+// worker 5 UUIDV4: Inserted 10000 records in 404430.28ms 100000/100000
+// worker 9 UUIDV4: Inserted 10000 records in 406055.74ms 100000/100000
+// worker 4 UUIDV4: Inserted 10000 records in 404333.18ms 100000/100000
+// worker 7 UUIDV4: Inserted 10000 records in 404777.91ms 100000/100000
+// worker 1 UUIDV4: Inserted 10000 records in 404750.35ms 100000/100000
+// worker 3 UUIDV4: Inserted 10000 records in 404363.40ms 100000/100000
+// worker 6 UUIDV4: Inserted 10000 records in 403127.96ms 100000/100000
+// All records inserted successfully!
+// UUIDV4 experiment ended
+// ------------------------------------------------------------
+// Starting UUIDV7 experiment...
+// Stopping Docker Compose...
+// Stopping experiment_db ... done
+// Removing experiment_db ... done
+// Removing network go-multithread-experement_default
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// Starting Docker Compose...
+// Creating network "go-multithread-experement_default" with the default driver
+// Creating volume "go-multithread-experement_mysql-db" with default driver
+// Creating experiment_db ... done
+// Waiting for MySQL service to be ready[mysql] 2024/01/10 22:44:13 packets.go:37: unexpected EOF
+// [mysql] 2024/01/10 22:44:13 packets.go:37: unexpected EOF
+// [mysql] 2024/01/10 22:44:13 packets.go:37: unexpected EOF
+// Docker Compose started
+// Starting UUIDV7 insertions....
+// worker 5 UUIDV7: Inserted 10000 records in 264114.01ms 10000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 264931.96ms 10000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 265208.33ms 10000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 265209.01ms 10000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 265323.85ms 10000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 265430.33ms 10000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 265593.43ms 10000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 265791.84ms 10000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 265972.83ms 10000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 266686.48ms 10000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 375904.26ms 20000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 376936.19ms 20000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 376767.72ms 20000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 377141.43ms 20000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 377851.93ms 20000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 377172.68ms 20000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 377392.08ms 20000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 378817.16ms 20000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 378873.44ms 20000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 377677.42ms 20000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 376350.64ms 30000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 375745.95ms 30000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 377001.73ms 30000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 376318.81ms 30000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 376790.84ms 30000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 377614.75ms 30000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 376102.56ms 30000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 376399.66ms 30000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 377562.04ms 30000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 377463.43ms 30000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 372315.03ms 40000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 372240.87ms 40000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 371730.60ms 40000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 370551.96ms 40000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 372539.84ms 40000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 372301.62ms 40000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 372230.92ms 40000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 372050.93ms 40000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 372291.62ms 40000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 372836.69ms 40000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 372451.98ms 50000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 371758.85ms 50000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 373054.01ms 50000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 373156.29ms 50000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 373285.86ms 50000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 373140.32ms 50000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 372538.07ms 50000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 373277.02ms 50000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 372762.99ms 50000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 372499.20ms 50000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 371851.64ms 60000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 371719.50ms 60000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 373271.50ms 60000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 371208.35ms 60000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 372016.59ms 60000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 373728.68ms 60000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 372036.97ms 60000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 373121.97ms 60000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 373533.64ms 60000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 372866.94ms 60000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 376956.44ms 70000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 377544.18ms 70000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 377376.91ms 70000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 377422.86ms 70000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 376900.80ms 70000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 376952.77ms 70000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 377574.35ms 70000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 379046.12ms 70000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 377770.04ms 70000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 378700.38ms 70000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 373980.29ms 80000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 372638.05ms 80000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 373216.89ms 80000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 373860.60ms 80000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 373847.25ms 80000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 373593.59ms 80000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 373490.42ms 80000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 373324.97ms 80000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 373183.46ms 80000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 374187.64ms 80000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 387551.84ms 90000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 387046.33ms 90000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 388629.32ms 90000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 387691.62ms 90000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 387751.76ms 90000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 387111.81ms 90000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 389045.80ms 90000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 387443.60ms 90000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 388330.98ms 90000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 390086.20ms 90000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 379179.64ms 100000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 378119.75ms 100000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 378134.93ms 100000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 377806.78ms 100000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 377295.10ms 100000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 378185.37ms 100000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 377416.19ms 100000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 378340.09ms 100000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 377741.95ms 100000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 375295.43ms 100000/100000
+// All records inserted successfully!
+// UUIDV7 experiment ended
+// ------------------------------------------------------------
+// Starting INT experiment...
+// Stopping Docker Compose...
+// Stopping experiment_db ... done
+// Removing experiment_db ... done
+// Removing network go-multithread-experement_default
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// Starting Docker Compose...
+// Creating network "go-multithread-experement_default" with the default driver
+// Creating volume "go-multithread-experement_mysql-db" with default driver
+// Creating experiment_db ... done
+// Waiting for MySQL service to be ready[mysql] 2024/01/10 23:45:50 packets.go:37: unexpected EOF
+// [mysql] 2024/01/10 23:45:50 packets.go:37: unexpected EOF
+// [mysql] 2024/01/10 23:45:50 packets.go:37: unexpected EOF
+// Docker Compose started
+// Starting INT insertions....
+// worker 9 UUIDV7: Inserted 10000 records in 249237.06ms 10000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 249255.92ms 10000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 249319.40ms 10000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 249396.06ms 10000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 249550.59ms 10000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 250040.71ms 10000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 250108.36ms 10000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 250194.88ms 10000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 250360.74ms 10000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 250459.14ms 10000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 376614.28ms 20000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 376961.83ms 20000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 377163.97ms 20000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 377914.33ms 20000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 376734.53ms 20000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 377797.74ms 20000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 377133.87ms 20000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 377334.41ms 20000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 377538.75ms 20000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 377358.95ms 20000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 369463.91ms 30000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 369530.01ms 30000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 370041.97ms 30000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 369472.58ms 30000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 370221.21ms 30000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 370056.76ms 30000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 370557.79ms 30000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 370576.42ms 30000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 370388.68ms 30000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 370385.50ms 30000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 346661.79ms 40000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 346401.13ms 40000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 347379.16ms 40000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 347202.71ms 40000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 346625.08ms 40000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 346604.49ms 40000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 346761.26ms 40000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 346670.15ms 40000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 346931.31ms 40000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 347044.96ms 40000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 372429.48ms 50000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 372418.17ms 50000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 373060.76ms 50000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 371918.33ms 50000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 372527.11ms 50000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 372823.72ms 50000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 373119.38ms 50000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 372812.84ms 50000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 373218.66ms 50000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 373128.33ms 50000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 373820.95ms 60000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 374055.51ms 60000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 373231.19ms 60000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 374796.99ms 60000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 374172.09ms 60000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 374588.61ms 60000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 373604.93ms 60000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 374584.23ms 60000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 374460.46ms 60000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 374661.10ms 60000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 342601.60ms 70000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 343297.14ms 70000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 342904.61ms 70000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 343740.76ms 70000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 343395.81ms 70000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 343952.39ms 70000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 342865.01ms 70000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 343512.84ms 70000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 342759.61ms 70000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 343268.72ms 70000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 351921.98ms 80000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 351700.37ms 80000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 352741.54ms 80000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 352531.01ms 80000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 351960.44ms 80000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 353188.46ms 80000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 352755.00ms 80000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 352650.64ms 80000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 353173.51ms 80000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 352783.86ms 80000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 345004.06ms 90000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 345699.81ms 90000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 343822.75ms 90000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 344841.66ms 90000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 345301.36ms 90000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 344654.88ms 90000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 344807.30ms 90000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 344722.97ms 90000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 344814.21ms 90000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 345249.30ms 90000/100000
+// worker 5 UUIDV7: Inserted 10000 records in 343689.86ms 100000/100000
+// worker 0 UUIDV7: Inserted 10000 records in 344678.62ms 100000/100000
+// worker 3 UUIDV7: Inserted 10000 records in 343809.69ms 100000/100000
+// worker 2 UUIDV7: Inserted 10000 records in 345162.47ms 100000/100000
+// worker 4 UUIDV7: Inserted 10000 records in 344397.70ms 100000/100000
+// worker 9 UUIDV7: Inserted 10000 records in 345269.24ms 100000/100000
+// worker 8 UUIDV7: Inserted 10000 records in 344122.60ms 100000/100000
+// worker 6 UUIDV7: Inserted 10000 records in 344123.18ms 100000/100000
+// worker 1 UUIDV7: Inserted 10000 records in 344375.99ms 100000/100000
+// worker 7 UUIDV7: Inserted 10000 records in 344553.84ms 100000/100000
+// All records inserted successfully!
+// INT experiment ended
+// ------------------------------------------------------------
+// Stopping Docker Compose...
+// Stopping experiment_db ... done
+// Removing experiment_db ... done
+// Removing network go-multithread-experement_default
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// UUIDV4: 3.8309372057523906e+07
+// UUIDV7: 3.654028977378002e+07
+// INT: 3.4759691984757885e+07
+// UUID V4 / UUID V7 percentage:  1.0484145663511766
+// UUIDV4 collision count: 0
+// UUIDV7 collision count: 0
+// INT collision count: 0
+// Ending experiment
+
+
+
+
+
+
+
+
+
+// Starting experiment
+// Cleaning up from previous runs...
+// ------------------------------------------------------------
+// Starting UUIDV4 experiment...
+// Stopping Docker Compose...
+// Removing network go-multithread-experement_default
+// WARNING: Network go-multithread-experement_default not found.
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// Starting Docker Compose...
+// Creating network "go-multithread-experement_default" with the default driver
+// Creating volume "go-multithread-experement_mysql-db" with default driver
+// Creating experiment_db ... done
+// Waiting for MySQL service to be ready[mysql] 2024/01/11 01:03:40 packets.go:37: unexpected EOF
+// [mysql] 2024/01/11 01:03:40 packets.go:37: unexpected EOF
+// [mysql] 2024/01/11 01:03:40 packets.go:37: unexpected EOF
+// Docker Compose started
+// Starting UUIDV4 insertions....
+// worker 0 UUIDV4: Inserted 10000 records in 153154.06ms 10000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 194940.85ms 20000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 259449.93ms 30000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 257680.91ms 40000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 258173.64ms 50000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 258295.11ms 60000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 257464.47ms 70000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 258069.91ms 80000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 260313.32ms 90000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 262410.11ms 100000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 262925.01ms 110000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 262775.37ms 120000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 263916.10ms 130000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264132.46ms 140000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264297.61ms 150000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264864.22ms 160000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264420.65ms 170000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 263131.79ms 180000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264271.26ms 190000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264916.13ms 200000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264233.16ms 210000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264879.81ms 220000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264580.30ms 230000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265269.90ms 240000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265539.91ms 250000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265696.57ms 260000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265401.58ms 270000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264219.67ms 280000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264887.28ms 290000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264222.95ms 300000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264448.64ms 310000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264928.26ms 320000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264314.32ms 330000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265769.11ms 340000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264879.04ms 350000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266043.79ms 360000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265531.35ms 370000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265764.39ms 380000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265877.34ms 390000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265432.71ms 400000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265788.39ms 410000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264968.10ms 420000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265101.52ms 430000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266451.11ms 440000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264591.44ms 450000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264807.42ms 460000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264754.01ms 470000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265300.23ms 480000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265315.82ms 490000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264919.81ms 500000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 264599.77ms 510000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265464.84ms 520000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265319.99ms 530000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266086.68ms 540000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266102.47ms 550000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265204.99ms 560000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265766.21ms 570000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265368.31ms 580000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265986.58ms 590000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265963.46ms 600000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266229.77ms 610000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265712.65ms 620000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265893.36ms 630000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266848.73ms 640000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267071.29ms 650000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 268014.37ms 660000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267470.85ms 670000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266828.83ms 680000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267008.56ms 690000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267434.27ms 700000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265624.54ms 710000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267140.33ms 720000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267640.06ms 730000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266922.92ms 740000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266809.57ms 750000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 256206.50ms 760000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267164.06ms 770000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265204.34ms 780000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265807.87ms 790000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265247.28ms 800000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265071.23ms 810000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266044.59ms 820000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265658.33ms 830000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265270.14ms 840000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266663.05ms 850000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266954.88ms 860000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266012.35ms 870000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266637.26ms 880000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265779.78ms 890000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265995.00ms 900000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267704.60ms 910000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 268021.31ms 920000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 265943.49ms 930000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266592.82ms 940000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267288.38ms 950000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 267246.57ms 960000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266939.25ms 970000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266230.03ms 980000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266652.32ms 990000/1000000
+// worker 0 UUIDV4: Inserted 10000 records in 266401.33ms 1000000/1000000
+// All records inserted successfully!
+// UUIDV4 experiment ended
+// ------------------------------------------------------------
+// Starting UUIDV7 experiment...
+// Stopping Docker Compose...
+// Stopping experiment_db ... done
+// Removing experiment_db ... done
+// Removing network go-multithread-experement_default
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// Starting Docker Compose...
+// Creating network "go-multithread-experement_default" with the default driver
+// Creating volume "go-multithread-experement_mysql-db" with default driver
+// Creating experiment_db ... done
+// Waiting for MySQL service to be ready[mysql] 2024/01/11 08:23:31 packets.go:37: unexpected EOF
+// [mysql] 2024/01/11 08:23:31 packets.go:37: unexpected EOF
+// [mysql] 2024/01/11 08:23:31 packets.go:37: unexpected EOF
+// Docker Compose started
+// Starting UUIDV7 insertions....
+// worker 0 UUIDV7: Inserted 10000 records in 151826.11ms 10000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 190695.54ms 20000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258753.02ms 30000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259451.51ms 40000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259912.37ms 50000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258448.39ms 60000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259656.52ms 70000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259241.87ms 80000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259041.31ms 90000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258542.79ms 100000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258869.40ms 110000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259509.92ms 120000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260947.84ms 130000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257441.40ms 140000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257424.95ms 150000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257295.49ms 160000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257457.42ms 170000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256389.81ms 180000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256195.91ms 190000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 255660.36ms 200000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256157.14ms 210000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257890.51ms 220000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258080.97ms 230000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257943.95ms 240000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259232.36ms 250000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259349.62ms 260000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257955.90ms 270000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257731.30ms 280000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257131.13ms 290000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258928.61ms 300000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257488.59ms 310000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258441.47ms 320000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258045.01ms 330000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257961.68ms 340000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257502.70ms 350000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256213.45ms 360000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256365.42ms 370000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256747.89ms 380000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259192.53ms 390000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259530.70ms 400000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258165.52ms 410000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257683.44ms 420000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258480.92ms 430000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258033.87ms 440000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258293.04ms 450000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256906.86ms 460000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257050.75ms 470000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256997.14ms 480000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256913.79ms 490000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258178.33ms 500000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257482.15ms 510000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 244180.08ms 520000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 255756.79ms 530000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256057.41ms 540000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256323.31ms 550000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 255621.67ms 560000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258452.37ms 570000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258256.22ms 580000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258446.36ms 590000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259255.29ms 600000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258512.61ms 610000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257242.98ms 620000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258145.50ms 630000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258017.78ms 640000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257562.93ms 650000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257629.16ms 660000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257529.26ms 670000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257057.62ms 680000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257641.83ms 690000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257755.71ms 700000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257864.61ms 710000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257793.10ms 720000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257439.17ms 730000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257804.52ms 740000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259175.54ms 750000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256785.84ms 760000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257650.53ms 770000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257795.41ms 780000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257923.37ms 790000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257250.10ms 800000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257008.13ms 810000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257726.90ms 820000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256647.40ms 830000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258278.51ms 840000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256843.13ms 850000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257123.92ms 860000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257100.52ms 870000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257196.71ms 880000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257111.01ms 890000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256432.23ms 900000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257874.79ms 910000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258372.01ms 920000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258067.14ms 930000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257406.75ms 940000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258345.56ms 950000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257852.61ms 960000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257057.77ms 970000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257890.42ms 980000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258533.18ms 990000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257973.67ms 1000000/1000000
+// All records inserted successfully!
+// UUIDV7 experiment ended
+// ------------------------------------------------------------
+// Starting INT experiment...
+// Stopping Docker Compose...
+// Stopping experiment_db ... done
+// Removing experiment_db ... done
+// Removing network go-multithread-experement_default
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// Starting Docker Compose...
+// Creating network "go-multithread-experement_default" with the default driver
+// Creating volume "go-multithread-experement_mysql-db" with default driver
+// Creating experiment_db ... done
+// Waiting for MySQL service to be ready[mysql] 2024/01/11 15:31:12 packets.go:37: unexpected EOF
+// [mysql] 2024/01/11 15:31:12 packets.go:37: unexpected EOF
+// [mysql] 2024/01/11 15:31:12 packets.go:37: unexpected EOF
+// Docker Compose started
+// Starting INT insertions....
+// worker 0 UUIDV7: Inserted 10000 records in 146665.73ms 10000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 183093.46ms 20000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 254926.46ms 30000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256267.62ms 40000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256501.79ms 50000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256318.13ms 60000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257328.03ms 70000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257002.97ms 80000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257531.55ms 90000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257530.20ms 100000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257434.15ms 110000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256138.99ms 120000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256685.36ms 130000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257064.30ms 140000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256161.75ms 150000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256493.36ms 160000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258338.82ms 170000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257756.15ms 180000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 256478.84ms 190000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 257105.03ms 200000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260195.15ms 210000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259820.44ms 220000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260341.19ms 230000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260131.07ms 240000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260617.89ms 250000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259926.94ms 260000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 261248.21ms 270000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260479.13ms 280000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259391.84ms 290000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260745.85ms 300000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259801.55ms 310000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260478.82ms 320000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260086.26ms 330000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260351.41ms 340000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260062.39ms 350000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260179.35ms 360000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260497.59ms 370000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259611.05ms 380000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259774.06ms 390000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258780.32ms 400000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259474.32ms 410000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260108.43ms 420000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260328.25ms 430000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260457.72ms 440000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259931.43ms 450000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260278.35ms 460000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258748.28ms 470000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259988.23ms 480000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260315.59ms 490000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259048.37ms 500000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260141.93ms 510000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260198.28ms 520000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259791.54ms 530000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259045.91ms 540000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260401.84ms 550000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260121.53ms 560000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260165.28ms 570000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260828.12ms 580000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260139.20ms 590000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260307.89ms 600000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260172.65ms 610000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 261153.02ms 620000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260955.52ms 630000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260304.83ms 640000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260738.98ms 650000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260336.82ms 660000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260833.95ms 670000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260158.32ms 680000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260295.63ms 690000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260311.21ms 700000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259763.66ms 710000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260143.38ms 720000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259698.04ms 730000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260149.30ms 740000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260082.65ms 750000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259959.02ms 760000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 261139.34ms 770000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260295.27ms 780000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260177.82ms 790000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260397.48ms 800000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 258535.62ms 810000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259379.33ms 820000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 261046.91ms 830000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259343.88ms 840000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260175.66ms 850000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 261169.51ms 860000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259749.00ms 870000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259473.87ms 880000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259819.45ms 890000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260210.43ms 900000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260044.00ms 910000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259628.50ms 920000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260015.24ms 930000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259613.99ms 940000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259478.03ms 950000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260090.92ms 960000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 259275.45ms 970000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260310.99ms 980000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260297.34ms 990000/1000000
+// worker 0 UUIDV7: Inserted 10000 records in 260001.15ms 1000000/1000000
+// All records inserted successfully!
+// INT experiment ended
+// ------------------------------------------------------------
+// Stopping Docker Compose...
+// Stopping experiment_db ... done
+// Removing experiment_db ... done
+// Removing network go-multithread-experement_default
+// Docker Compose stopped
+// Deleting Docker volume...
+// go-multithread-experement_mysql-db
+// Docker volume deleted
+// UUIDV4: 2.6320770985406373e+07
+// UUIDV7: 2.5592608053863425e+07
+// INT: 2.5759889825318027e+07
+// UUID V4 / UUID V7 percentage:  1.0284520799916297
+// UUIDV4 collision count: 0
+// UUIDV7 collision count: 0
+// INT collision count: 0
+// Ending experiment
+
+
+
+
+
+
+
+
+
+///// 5millions
+
+
+worker 8 UUIDV7: Inserted 10000 records in 373038.64ms 20000/500000
+worker 0 UUIDV7: Inserted 10000 records in 371943.29ms 20000/500000
+worker 9 UUIDV7: Inserted 10000 records in 372026.24ms 20000/500000
+worker 5 UUIDV7: Inserted 10000 records in 372276.52ms 20000/500000
+worker 1 UUIDV7: Inserted 10000 records in 371808.98ms 20000/500000
+worker 7 UUIDV7: Inserted 10000 records in 372530.20ms 20000/500000
+worker 3 UUIDV7: Inserted 10000 records in 372346.13ms 20000/500000
+worker 4 UUIDV7: Inserted 10000 records in 373097.59ms 20000/500000
+worker 2 UUIDV7: Inserted 10000 records in 373543.96ms 20000/500000
+worker 6 UUIDV7: Inserted 10000 records in 381550.33ms 30000/500000
+worker 0 UUIDV7: Inserted 10000 records in 381291.93ms 30000/500000
+worker 1 UUIDV7: Inserted 10000 records in 380302.19ms 30000/500000
+worker 8 UUIDV7: Inserted 10000 records in 381808.04ms 30000/500000
+worker 7 UUIDV7: Inserted 10000 records in 380684.73ms 30000/500000
+worker 9 UUIDV7: Inserted 10000 records in 381706.32ms 30000/500000
+worker 3 UUIDV7: Inserted 10000 records in 380866.25ms 30000/500000
+worker 2 UUIDV7: Inserted 10000 records in 380615.27ms 30000/500000
+worker 5 UUIDV7: Inserted 10000 records in 382634.07ms 30000/500000
+worker 4 UUIDV7: Inserted 10000 records in 381749.15ms 30000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391136.39ms 40000/500000
+worker 8 UUIDV7: Inserted 10000 records in 390536.52ms 40000/500000
+worker 7 UUIDV7: Inserted 10000 records in 390360.28ms 40000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391194.50ms 40000/500000
+worker 1 UUIDV7: Inserted 10000 records in 391076.68ms 40000/500000
+worker 2 UUIDV7: Inserted 10000 records in 390236.64ms 40000/500000
+worker 9 UUIDV7: Inserted 10000 records in 391409.47ms 40000/500000
+worker 3 UUIDV7: Inserted 10000 records in 391326.09ms 40000/500000
+worker 4 UUIDV7: Inserted 10000 records in 390327.20ms 40000/500000
+worker 5 UUIDV7: Inserted 10000 records in 390903.55ms 40000/500000
+worker 8 UUIDV7: Inserted 10000 records in 392221.17ms 50000/500000
+worker 6 UUIDV7: Inserted 10000 records in 393201.83ms 50000/500000
+worker 7 UUIDV7: Inserted 10000 records in 392541.06ms 50000/500000
+worker 0 UUIDV7: Inserted 10000 records in 392570.66ms 50000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392456.70ms 50000/500000
+worker 1 UUIDV7: Inserted 10000 records in 393690.05ms 50000/500000
+worker 2 UUIDV7: Inserted 10000 records in 393136.14ms 50000/500000
+worker 3 UUIDV7: Inserted 10000 records in 393202.00ms 50000/500000
+worker 4 UUIDV7: Inserted 10000 records in 393479.19ms 50000/500000
+worker 5 UUIDV7: Inserted 10000 records in 393803.51ms 50000/500000
+worker 6 UUIDV7: Inserted 10000 records in 393824.14ms 60000/500000
+worker 8 UUIDV7: Inserted 10000 records in 394245.89ms 60000/500000
+worker 9 UUIDV7: Inserted 10000 records in 393604.35ms 60000/500000
+worker 0 UUIDV7: Inserted 10000 records in 394614.57ms 60000/500000
+worker 1 UUIDV7: Inserted 10000 records in 393671.58ms 60000/500000
+worker 7 UUIDV7: Inserted 10000 records in 395029.29ms 60000/500000
+worker 3 UUIDV7: Inserted 10000 records in 393209.19ms 60000/500000
+worker 2 UUIDV7: Inserted 10000 records in 393757.11ms 60000/500000
+worker 4 UUIDV7: Inserted 10000 records in 393961.64ms 60000/500000
+worker 5 UUIDV7: Inserted 10000 records in 393965.67ms 60000/500000
+worker 9 UUIDV7: Inserted 10000 records in 393611.87ms 70000/500000
+worker 6 UUIDV7: Inserted 10000 records in 394915.01ms 70000/500000
+worker 8 UUIDV7: Inserted 10000 records in 395044.27ms 70000/500000
+worker 7 UUIDV7: Inserted 10000 records in 394152.16ms 70000/500000
+worker 3 UUIDV7: Inserted 10000 records in 394436.96ms 70000/500000
+worker 0 UUIDV7: Inserted 10000 records in 395108.73ms 70000/500000
+worker 1 UUIDV7: Inserted 10000 records in 395062.05ms 70000/500000
+worker 2 UUIDV7: Inserted 10000 records in 395914.42ms 70000/500000
+worker 4 UUIDV7: Inserted 10000 records in 395160.23ms 70000/500000
+worker 5 UUIDV7: Inserted 10000 records in 395738.09ms 70000/500000
+worker 0 UUIDV7: Inserted 10000 records in 402616.22ms 80000/500000
+worker 6 UUIDV7: Inserted 10000 records in 405474.37ms 80000/500000
+worker 7 UUIDV7: Inserted 10000 records in 405224.86ms 80000/500000
+worker 9 UUIDV7: Inserted 10000 records in 406309.52ms 80000/500000
+worker 8 UUIDV7: Inserted 10000 records in 406060.91ms 80000/500000
+worker 3 UUIDV7: Inserted 10000 records in 405620.45ms 80000/500000
+worker 1 UUIDV7: Inserted 10000 records in 405594.56ms 80000/500000
+worker 2 UUIDV7: Inserted 10000 records in 405382.07ms 80000/500000
+worker 4 UUIDV7: Inserted 10000 records in 405419.72ms 80000/500000
+worker 5 UUIDV7: Inserted 10000 records in 406306.55ms 80000/500000
+worker 0 UUIDV7: Inserted 10000 records in 399195.23ms 90000/500000
+worker 3 UUIDV7: Inserted 10000 records in 397649.89ms 90000/500000
+worker 9 UUIDV7: Inserted 10000 records in 398963.95ms 90000/500000
+worker 6 UUIDV7: Inserted 10000 records in 399581.38ms 90000/500000
+worker 7 UUIDV7: Inserted 10000 records in 399365.32ms 90000/500000
+worker 8 UUIDV7: Inserted 10000 records in 399096.20ms 90000/500000
+worker 2 UUIDV7: Inserted 10000 records in 398855.42ms 90000/500000
+worker 1 UUIDV7: Inserted 10000 records in 399822.37ms 90000/500000
+worker 4 UUIDV7: Inserted 10000 records in 398880.79ms 90000/500000
+worker 5 UUIDV7: Inserted 10000 records in 400058.90ms 90000/500000
+worker 0 UUIDV7: Inserted 10000 records in 416775.36ms 100000/500000
+worker 9 UUIDV7: Inserted 10000 records in 416065.75ms 100000/500000
+worker 3 UUIDV7: Inserted 10000 records in 416842.78ms 100000/500000
+worker 6 UUIDV7: Inserted 10000 records in 416319.93ms 100000/500000
+worker 8 UUIDV7: Inserted 10000 records in 417100.10ms 100000/500000
+worker 7 UUIDV7: Inserted 10000 records in 417468.32ms 100000/500000
+worker 1 UUIDV7: Inserted 10000 records in 417017.12ms 100000/500000
+worker 2 UUIDV7: Inserted 10000 records in 417308.54ms 100000/500000
+worker 4 UUIDV7: Inserted 10000 records in 417021.49ms 100000/500000
+worker 5 UUIDV7: Inserted 10000 records in 416085.76ms 100000/500000
+worker 0 UUIDV7: Inserted 10000 records in 396804.18ms 110000/500000
+worker 9 UUIDV7: Inserted 10000 records in 396178.45ms 110000/500000
+worker 6 UUIDV7: Inserted 10000 records in 396088.30ms 110000/500000
+worker 3 UUIDV7: Inserted 10000 records in 397103.26ms 110000/500000
+worker 7 UUIDV7: Inserted 10000 records in 396908.56ms 110000/500000
+worker 8 UUIDV7: Inserted 10000 records in 397914.04ms 110000/500000
+worker 1 UUIDV7: Inserted 10000 records in 397901.03ms 110000/500000
+worker 2 UUIDV7: Inserted 10000 records in 397940.49ms 110000/500000
+worker 4 UUIDV7: Inserted 10000 records in 397885.36ms 110000/500000
+worker 5 UUIDV7: Inserted 10000 records in 396892.23ms 110000/500000
+worker 9 UUIDV7: Inserted 10000 records in 402876.03ms 120000/500000
+worker 0 UUIDV7: Inserted 10000 records in 403514.18ms 120000/500000
+worker 6 UUIDV7: Inserted 10000 records in 402961.29ms 120000/500000
+worker 3 UUIDV7: Inserted 10000 records in 404418.72ms 120000/500000
+worker 7 UUIDV7: Inserted 10000 records in 403606.58ms 120000/500000
+worker 1 UUIDV7: Inserted 10000 records in 401624.20ms 120000/500000
+worker 8 UUIDV7: Inserted 10000 records in 403060.28ms 120000/500000
+worker 4 UUIDV7: Inserted 10000 records in 403654.95ms 120000/500000
+worker 2 UUIDV7: Inserted 10000 records in 404546.66ms 120000/500000
+worker 5 UUIDV7: Inserted 10000 records in 404055.60ms 120000/500000
+worker 0 UUIDV7: Inserted 10000 records in 406170.42ms 130000/500000
+worker 6 UUIDV7: Inserted 10000 records in 407420.64ms 130000/500000
+worker 9 UUIDV7: Inserted 10000 records in 408562.91ms 130000/500000
+worker 1 UUIDV7: Inserted 10000 records in 405783.74ms 130000/500000
+worker 3 UUIDV7: Inserted 10000 records in 407646.68ms 130000/500000
+worker 8 UUIDV7: Inserted 10000 records in 407091.21ms 130000/500000
+worker 7 UUIDV7: Inserted 10000 records in 407497.12ms 130000/500000
+worker 4 UUIDV7: Inserted 10000 records in 407230.23ms 130000/500000
+worker 2 UUIDV7: Inserted 10000 records in 406902.69ms 130000/500000
+worker 5 UUIDV7: Inserted 10000 records in 406992.28ms 130000/500000
+worker 0 UUIDV7: Inserted 10000 records in 400439.38ms 140000/500000
+worker 9 UUIDV7: Inserted 10000 records in 399408.87ms 140000/500000
+worker 6 UUIDV7: Inserted 10000 records in 400327.19ms 140000/500000
+worker 1 UUIDV7: Inserted 10000 records in 399258.09ms 140000/500000
+worker 3 UUIDV7: Inserted 10000 records in 400035.28ms 140000/500000
+worker 8 UUIDV7: Inserted 10000 records in 399887.81ms 140000/500000
+worker 7 UUIDV7: Inserted 10000 records in 400375.31ms 140000/500000
+worker 4 UUIDV7: Inserted 10000 records in 400182.83ms 140000/500000
+worker 2 UUIDV7: Inserted 10000 records in 400367.43ms 140000/500000
+worker 5 UUIDV7: Inserted 10000 records in 400664.92ms 140000/500000
+worker 0 UUIDV7: Inserted 10000 records in 394393.72ms 150000/500000
+worker 6 UUIDV7: Inserted 10000 records in 394445.36ms 150000/500000
+worker 9 UUIDV7: Inserted 10000 records in 395410.90ms 150000/500000
+worker 1 UUIDV7: Inserted 10000 records in 395748.75ms 150000/500000
+worker 8 UUIDV7: Inserted 10000 records in 395016.54ms 150000/500000
+worker 7 UUIDV7: Inserted 10000 records in 395673.71ms 150000/500000
+worker 3 UUIDV7: Inserted 10000 records in 397000.31ms 150000/500000
+worker 4 UUIDV7: Inserted 10000 records in 395117.22ms 150000/500000
+worker 2 UUIDV7: Inserted 10000 records in 394908.86ms 150000/500000
+worker 5 UUIDV7: Inserted 10000 records in 395469.61ms 150000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391134.00ms 160000/500000
+worker 1 UUIDV7: Inserted 10000 records in 389874.89ms 160000/500000
+worker 9 UUIDV7: Inserted 10000 records in 390807.66ms 160000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391765.11ms 160000/500000
+worker 8 UUIDV7: Inserted 10000 records in 390946.08ms 160000/500000
+worker 7 UUIDV7: Inserted 10000 records in 390394.97ms 160000/500000
+worker 3 UUIDV7: Inserted 10000 records in 391338.04ms 160000/500000
+worker 4 UUIDV7: Inserted 10000 records in 390756.67ms 160000/500000
+worker 2 UUIDV7: Inserted 10000 records in 391830.36ms 160000/500000
+worker 5 UUIDV7: Inserted 10000 records in 391550.34ms 160000/500000
+worker 0 UUIDV7: Inserted 10000 records in 393136.66ms 170000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391483.82ms 170000/500000
+worker 1 UUIDV7: Inserted 10000 records in 392401.10ms 170000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392461.44ms 170000/500000
+worker 8 UUIDV7: Inserted 10000 records in 390742.80ms 170000/500000
+worker 7 UUIDV7: Inserted 10000 records in 392510.59ms 170000/500000
+worker 3 UUIDV7: Inserted 10000 records in 392232.21ms 170000/500000
+worker 4 UUIDV7: Inserted 10000 records in 392168.75ms 170000/500000
+worker 2 UUIDV7: Inserted 10000 records in 391615.01ms 170000/500000
+worker 5 UUIDV7: Inserted 10000 records in 393255.42ms 170000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391590.71ms 180000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391552.97ms 180000/500000
+worker 1 UUIDV7: Inserted 10000 records in 391288.72ms 180000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392749.45ms 180000/500000
+worker 8 UUIDV7: Inserted 10000 records in 392317.21ms 180000/500000
+worker 7 UUIDV7: Inserted 10000 records in 391114.47ms 180000/500000
+worker 3 UUIDV7: Inserted 10000 records in 391857.67ms 180000/500000
+worker 4 UUIDV7: Inserted 10000 records in 392159.40ms 180000/500000
+worker 2 UUIDV7: Inserted 10000 records in 392060.18ms 180000/500000
+worker 5 UUIDV7: Inserted 10000 records in 392127.03ms 180000/500000
+worker 6 UUIDV7: Inserted 10000 records in 390619.25ms 190000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391993.06ms 190000/500000
+worker 1 UUIDV7: Inserted 10000 records in 392650.10ms 190000/500000
+worker 8 UUIDV7: Inserted 10000 records in 391239.88ms 190000/500000
+worker 9 UUIDV7: Inserted 10000 records in 391362.42ms 190000/500000
+worker 7 UUIDV7: Inserted 10000 records in 391302.94ms 190000/500000
+worker 4 UUIDV7: Inserted 10000 records in 391411.28ms 190000/500000
+worker 3 UUIDV7: Inserted 10000 records in 393007.82ms 190000/500000
+worker 2 UUIDV7: Inserted 10000 records in 393007.93ms 190000/500000
+worker 5 UUIDV7: Inserted 10000 records in 390949.01ms 190000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391626.30ms 200000/500000
+worker 6 UUIDV7: Inserted 10000 records in 393789.32ms 200000/500000
+worker 8 UUIDV7: Inserted 10000 records in 392222.14ms 200000/500000
+worker 1 UUIDV7: Inserted 10000 records in 393049.05ms 200000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392900.82ms 200000/500000
+worker 7 UUIDV7: Inserted 10000 records in 392331.27ms 200000/500000
+worker 4 UUIDV7: Inserted 10000 records in 391196.26ms 200000/500000
+worker 3 UUIDV7: Inserted 10000 records in 392180.00ms 200000/500000
+worker 2 UUIDV7: Inserted 10000 records in 392247.54ms 200000/500000
+worker 5 UUIDV7: Inserted 10000 records in 392913.09ms 200000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391980.34ms 210000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391657.27ms 210000/500000
+worker 8 UUIDV7: Inserted 10000 records in 391569.09ms 210000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392197.21ms 210000/500000
+worker 1 UUIDV7: Inserted 10000 records in 392824.80ms 210000/500000
+worker 7 UUIDV7: Inserted 10000 records in 392399.29ms 210000/500000
+worker 4 UUIDV7: Inserted 10000 records in 392310.20ms 210000/500000
+worker 3 UUIDV7: Inserted 10000 records in 392928.12ms 210000/500000
+worker 2 UUIDV7: Inserted 10000 records in 392047.34ms 210000/500000
+worker 5 UUIDV7: Inserted 10000 records in 391941.23ms 210000/500000
+worker 0 UUIDV7: Inserted 10000 records in 390847.88ms 220000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391680.09ms 220000/500000
+worker 8 UUIDV7: Inserted 10000 records in 391081.70ms 220000/500000
+worker 1 UUIDV7: Inserted 10000 records in 389816.87ms 220000/500000
+worker 9 UUIDV7: Inserted 10000 records in 390484.38ms 220000/500000
+worker 7 UUIDV7: Inserted 10000 records in 390007.46ms 220000/500000
+worker 4 UUIDV7: Inserted 10000 records in 390743.32ms 220000/500000
+worker 3 UUIDV7: Inserted 10000 records in 390221.59ms 220000/500000
+worker 2 UUIDV7: Inserted 10000 records in 391498.25ms 220000/500000
+worker 5 UUIDV7: Inserted 10000 records in 391997.97ms 220000/500000
+worker 0 UUIDV7: Inserted 10000 records in 423697.11ms 230000/500000
+worker 6 UUIDV7: Inserted 10000 records in 423492.54ms 230000/500000
+worker 1 UUIDV7: Inserted 10000 records in 423622.62ms 230000/500000
+worker 8 UUIDV7: Inserted 10000 records in 424454.90ms 230000/500000
+worker 9 UUIDV7: Inserted 10000 records in 424067.91ms 230000/500000
+worker 7 UUIDV7: Inserted 10000 records in 424492.63ms 230000/500000
+worker 4 UUIDV7: Inserted 10000 records in 424256.78ms 230000/500000
+worker 3 UUIDV7: Inserted 10000 records in 424331.01ms 230000/500000
+worker 2 UUIDV7: Inserted 10000 records in 426221.65ms 230000/500000
+worker 5 UUIDV7: Inserted 10000 records in 425549.46ms 230000/500000
+worker 0 UUIDV7: Inserted 10000 records in 410734.18ms 240000/500000
+worker 6 UUIDV7: Inserted 10000 records in 409902.98ms 240000/500000
+worker 9 UUIDV7: Inserted 10000 records in 409581.72ms 240000/500000
+worker 1 UUIDV7: Inserted 10000 records in 410334.70ms 240000/500000
+worker 8 UUIDV7: Inserted 10000 records in 410447.34ms 240000/500000
+worker 7 UUIDV7: Inserted 10000 records in 410561.10ms 240000/500000
+worker 3 UUIDV7: Inserted 10000 records in 407575.41ms 240000/500000
+worker 4 UUIDV7: Inserted 10000 records in 409776.22ms 240000/500000
+worker 2 UUIDV7: Inserted 10000 records in 409913.58ms 240000/500000
+worker 5 UUIDV7: Inserted 10000 records in 409429.78ms 240000/500000
+worker 6 UUIDV7: Inserted 10000 records in 405204.66ms 250000/500000
+worker 0 UUIDV7: Inserted 10000 records in 406643.44ms 250000/500000
+worker 1 UUIDV7: Inserted 10000 records in 404745.08ms 250000/500000
+worker 9 UUIDV7: Inserted 10000 records in 404983.10ms 250000/500000
+worker 8 UUIDV7: Inserted 10000 records in 405950.34ms 250000/500000
+worker 7 UUIDV7: Inserted 10000 records in 405737.36ms 250000/500000
+worker 3 UUIDV7: Inserted 10000 records in 407284.94ms 250000/500000
+worker 4 UUIDV7: Inserted 10000 records in 407099.45ms 250000/500000
+worker 2 UUIDV7: Inserted 10000 records in 406973.67ms 250000/500000
+worker 5 UUIDV7: Inserted 10000 records in 406602.74ms 250000/500000
+worker 6 UUIDV7: Inserted 10000 records in 430210.37ms 260000/500000
+worker 1 UUIDV7: Inserted 10000 records in 430136.64ms 260000/500000
+worker 9 UUIDV7: Inserted 10000 records in 430207.51ms 260000/500000
+worker 0 UUIDV7: Inserted 10000 records in 430741.77ms 260000/500000
+worker 8 UUIDV7: Inserted 10000 records in 430648.32ms 260000/500000
+worker 7 UUIDV7: Inserted 10000 records in 429935.43ms 260000/500000
+worker 4 UUIDV7: Inserted 10000 records in 429889.27ms 260000/500000
+worker 3 UUIDV7: Inserted 10000 records in 430307.54ms 260000/500000
+worker 2 UUIDV7: Inserted 10000 records in 430755.17ms 260000/500000
+worker 5 UUIDV7: Inserted 10000 records in 430314.29ms 260000/500000
+worker 6 UUIDV7: Inserted 10000 records in 390319.86ms 270000/500000
+worker 1 UUIDV7: Inserted 10000 records in 390860.35ms 270000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391403.85ms 270000/500000
+worker 8 UUIDV7: Inserted 10000 records in 390648.60ms 270000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392835.97ms 270000/500000
+worker 7 UUIDV7: Inserted 10000 records in 390618.72ms 270000/500000
+worker 4 UUIDV7: Inserted 10000 records in 389659.76ms 270000/500000
+worker 3 UUIDV7: Inserted 10000 records in 390189.04ms 270000/500000
+worker 2 UUIDV7: Inserted 10000 records in 389325.20ms 270000/500000
+worker 5 UUIDV7: Inserted 10000 records in 389022.01ms 270000/500000
+worker 6 UUIDV7: Inserted 10000 records in 392327.13ms 280000/500000
+worker 1 UUIDV7: Inserted 10000 records in 390827.68ms 280000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391743.73ms 280000/500000
+worker 8 UUIDV7: Inserted 10000 records in 391458.11ms 280000/500000
+worker 7 UUIDV7: Inserted 10000 records in 391549.74ms 280000/500000
+worker 9 UUIDV7: Inserted 10000 records in 391676.29ms 280000/500000
+worker 4 UUIDV7: Inserted 10000 records in 391566.96ms 280000/500000
+worker 3 UUIDV7: Inserted 10000 records in 391980.23ms 280000/500000
+worker 5 UUIDV7: Inserted 10000 records in 391606.78ms 280000/500000
+worker 2 UUIDV7: Inserted 10000 records in 392036.20ms 280000/500000
+worker 6 UUIDV7: Inserted 10000 records in 406726.42ms 290000/500000
+worker 1 UUIDV7: Inserted 10000 records in 406784.51ms 290000/500000
+worker 0 UUIDV7: Inserted 10000 records in 406178.19ms 290000/500000
+worker 9 UUIDV7: Inserted 10000 records in 405806.49ms 290000/500000
+worker 8 UUIDV7: Inserted 10000 records in 406461.38ms 290000/500000
+worker 7 UUIDV7: Inserted 10000 records in 406474.22ms 290000/500000
+worker 4 UUIDV7: Inserted 10000 records in 407482.45ms 290000/500000
+worker 3 UUIDV7: Inserted 10000 records in 407300.19ms 290000/500000
+worker 2 UUIDV7: Inserted 10000 records in 407002.24ms 290000/500000
+worker 5 UUIDV7: Inserted 10000 records in 407963.93ms 290000/500000
+worker 1 UUIDV7: Inserted 10000 records in 391469.86ms 300000/500000
+worker 6 UUIDV7: Inserted 10000 records in 392379.12ms 300000/500000
+worker 8 UUIDV7: Inserted 10000 records in 390258.58ms 300000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391828.09ms 300000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392055.96ms 300000/500000
+worker 7 UUIDV7: Inserted 10000 records in 391697.56ms 300000/500000
+worker 4 UUIDV7: Inserted 10000 records in 392844.42ms 300000/500000
+worker 3 UUIDV7: Inserted 10000 records in 392773.67ms 300000/500000
+worker 2 UUIDV7: Inserted 10000 records in 391454.73ms 300000/500000
+worker 5 UUIDV7: Inserted 10000 records in 392093.04ms 300000/500000
+worker 1 UUIDV7: Inserted 10000 records in 389872.57ms 310000/500000
+worker 6 UUIDV7: Inserted 10000 records in 390481.68ms 310000/500000
+worker 0 UUIDV7: Inserted 10000 records in 390016.87ms 310000/500000
+worker 8 UUIDV7: Inserted 10000 records in 390775.52ms 310000/500000
+worker 7 UUIDV7: Inserted 10000 records in 389845.45ms 310000/500000
+worker 9 UUIDV7: Inserted 10000 records in 390593.67ms 310000/500000
+worker 4 UUIDV7: Inserted 10000 records in 390400.34ms 310000/500000
+worker 3 UUIDV7: Inserted 10000 records in 390140.79ms 310000/500000
+worker 2 UUIDV7: Inserted 10000 records in 390492.42ms 310000/500000
+worker 5 UUIDV7: Inserted 10000 records in 390995.52ms 310000/500000
+worker 1 UUIDV7: Inserted 10000 records in 393821.82ms 320000/500000
+worker 0 UUIDV7: Inserted 10000 records in 392672.05ms 320000/500000
+worker 6 UUIDV7: Inserted 10000 records in 393105.92ms 320000/500000
+worker 8 UUIDV7: Inserted 10000 records in 393813.82ms 320000/500000
+worker 7 UUIDV7: Inserted 10000 records in 393753.91ms 320000/500000
+worker 9 UUIDV7: Inserted 10000 records in 394124.35ms 320000/500000
+worker 4 UUIDV7: Inserted 10000 records in 393225.72ms 320000/500000
+worker 3 UUIDV7: Inserted 10000 records in 394296.62ms 320000/500000
+worker 2 UUIDV7: Inserted 10000 records in 395324.51ms 320000/500000
+worker 5 UUIDV7: Inserted 10000 records in 394187.60ms 320000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391605.41ms 330000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391692.60ms 330000/500000
+worker 1 UUIDV7: Inserted 10000 records in 392292.83ms 330000/500000
+worker 8 UUIDV7: Inserted 10000 records in 391225.47ms 330000/500000
+worker 9 UUIDV7: Inserted 10000 records in 390220.42ms 330000/500000
+worker 7 UUIDV7: Inserted 10000 records in 392273.05ms 330000/500000
+worker 4 UUIDV7: Inserted 10000 records in 390787.51ms 330000/500000
+worker 3 UUIDV7: Inserted 10000 records in 391227.09ms 330000/500000
+worker 2 UUIDV7: Inserted 10000 records in 391173.64ms 330000/500000
+worker 5 UUIDV7: Inserted 10000 records in 391510.46ms 330000/500000
+worker 1 UUIDV7: Inserted 10000 records in 391765.92ms 340000/500000
+worker 0 UUIDV7: Inserted 10000 records in 392594.45ms 340000/500000
+worker 9 UUIDV7: Inserted 10000 records in 391114.55ms 340000/500000
+worker 6 UUIDV7: Inserted 10000 records in 393260.21ms 340000/500000
+worker 8 UUIDV7: Inserted 10000 records in 392726.23ms 340000/500000
+worker 7 UUIDV7: Inserted 10000 records in 394026.58ms 340000/500000
+worker 4 UUIDV7: Inserted 10000 records in 391949.34ms 340000/500000
+worker 3 UUIDV7: Inserted 10000 records in 391164.16ms 340000/500000
+worker 2 UUIDV7: Inserted 10000 records in 391299.21ms 340000/500000
+worker 5 UUIDV7: Inserted 10000 records in 392515.26ms 340000/500000
+worker 1 UUIDV7: Inserted 10000 records in 388995.17ms 350000/500000
+worker 9 UUIDV7: Inserted 10000 records in 388253.90ms 350000/500000
+worker 0 UUIDV7: Inserted 10000 records in 390202.12ms 350000/500000
+worker 8 UUIDV7: Inserted 10000 records in 389263.38ms 350000/500000
+worker 6 UUIDV7: Inserted 10000 records in 389818.89ms 350000/500000
+worker 7 UUIDV7: Inserted 10000 records in 390906.15ms 350000/500000
+worker 4 UUIDV7: Inserted 10000 records in 390579.03ms 350000/500000
+worker 3 UUIDV7: Inserted 10000 records in 389922.42ms 350000/500000
+worker 2 UUIDV7: Inserted 10000 records in 389355.20ms 350000/500000
+worker 5 UUIDV7: Inserted 10000 records in 388438.85ms 350000/500000
+worker 1 UUIDV7: Inserted 10000 records in 391501.13ms 360000/500000
+worker 9 UUIDV7: Inserted 10000 records in 392423.29ms 360000/500000
+worker 0 UUIDV7: Inserted 10000 records in 391760.35ms 360000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391482.06ms 360000/500000
+worker 8 UUIDV7: Inserted 10000 records in 392216.78ms 360000/500000
+worker 7 UUIDV7: Inserted 10000 records in 391752.23ms 360000/500000
+worker 4 UUIDV7: Inserted 10000 records in 392058.63ms 360000/500000
+worker 3 UUIDV7: Inserted 10000 records in 393206.07ms 360000/500000
+worker 2 UUIDV7: Inserted 10000 records in 392183.21ms 360000/500000
+worker 5 UUIDV7: Inserted 10000 records in 390706.25ms 360000/500000
+worker 1 UUIDV7: Inserted 10000 records in 389795.49ms 370000/500000
+worker 9 UUIDV7: Inserted 10000 records in 389126.92ms 370000/500000
+worker 0 UUIDV7: Inserted 10000 records in 389639.63ms 370000/500000
+worker 8 UUIDV7: Inserted 10000 records in 389233.90ms 370000/500000
+worker 6 UUIDV7: Inserted 10000 records in 390976.44ms 370000/500000
+worker 7 UUIDV7: Inserted 10000 records in 388539.75ms 370000/500000
+worker 4 UUIDV7: Inserted 10000 records in 389197.31ms 370000/500000
+worker 3 UUIDV7: Inserted 10000 records in 388485.98ms 370000/500000
+worker 5 UUIDV7: Inserted 10000 records in 388456.58ms 370000/500000
+worker 2 UUIDV7: Inserted 10000 records in 389269.37ms 370000/500000
+worker 1 UUIDV7: Inserted 10000 records in 391759.13ms 380000/500000
+worker 9 UUIDV7: Inserted 10000 records in 391865.43ms 380000/500000
+worker 0 UUIDV7: Inserted 10000 records in 390380.38ms 380000/500000
+worker 8 UUIDV7: Inserted 10000 records in 391060.16ms 380000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391994.35ms 380000/500000
+worker 7 UUIDV7: Inserted 10000 records in 391875.55ms 380000/500000
+worker 4 UUIDV7: Inserted 10000 records in 390939.88ms 380000/500000
+worker 3 UUIDV7: Inserted 10000 records in 391660.73ms 380000/500000
+worker 5 UUIDV7: Inserted 10000 records in 390563.63ms 380000/500000
+worker 2 UUIDV7: Inserted 10000 records in 394143.61ms 380000/500000
+worker 0 UUIDV7: Inserted 10000 records in 412492.19ms 390000/500000
+worker 1 UUIDV7: Inserted 10000 records in 414360.83ms 390000/500000
+worker 9 UUIDV7: Inserted 10000 records in 414241.38ms 390000/500000
+worker 8 UUIDV7: Inserted 10000 records in 414249.19ms 390000/500000
+worker 6 UUIDV7: Inserted 10000 records in 413343.17ms 390000/500000
+worker 7 UUIDV7: Inserted 10000 records in 413703.87ms 390000/500000
+worker 4 UUIDV7: Inserted 10000 records in 413624.45ms 390000/500000
+worker 3 UUIDV7: Inserted 10000 records in 413373.47ms 390000/500000
+worker 5 UUIDV7: Inserted 10000 records in 414466.19ms 390000/500000
+worker 2 UUIDV7: Inserted 10000 records in 413940.18ms 390000/500000
+worker 9 UUIDV7: Inserted 10000 records in 414733.52ms 400000/500000
+worker 0 UUIDV7: Inserted 10000 records in 416409.49ms 400000/500000
+worker 1 UUIDV7: Inserted 10000 records in 415923.87ms 400000/500000
+worker 8 UUIDV7: Inserted 10000 records in 415473.07ms 400000/500000
+worker 6 UUIDV7: Inserted 10000 records in 414877.19ms 400000/500000
+worker 4 UUIDV7: Inserted 10000 records in 414775.03ms 400000/500000
+worker 7 UUIDV7: Inserted 10000 records in 415585.32ms 400000/500000
+worker 3 UUIDV7: Inserted 10000 records in 415391.56ms 400000/500000
+worker 5 UUIDV7: Inserted 10000 records in 413842.04ms 400000/500000
+worker 2 UUIDV7: Inserted 10000 records in 414468.24ms 400000/500000
+worker 0 UUIDV7: Inserted 10000 records in 416509.07ms 410000/500000
+worker 9 UUIDV7: Inserted 10000 records in 416617.97ms 410000/500000
+worker 1 UUIDV7: Inserted 10000 records in 416593.49ms 410000/500000
+worker 8 UUIDV7: Inserted 10000 records in 416267.76ms 410000/500000
+worker 6 UUIDV7: Inserted 10000 records in 416587.42ms 410000/500000
+worker 4 UUIDV7: Inserted 10000 records in 414462.25ms 410000/500000
+worker 7 UUIDV7: Inserted 10000 records in 417465.15ms 410000/500000
+worker 3 UUIDV7: Inserted 10000 records in 416320.75ms 410000/500000
+worker 5 UUIDV7: Inserted 10000 records in 415608.06ms 410000/500000
+worker 2 UUIDV7: Inserted 10000 records in 416903.72ms 410000/500000
+worker 9 UUIDV7: Inserted 10000 records in 403485.65ms 420000/500000
+worker 8 UUIDV7: Inserted 10000 records in 404060.72ms 420000/500000
+worker 0 UUIDV7: Inserted 10000 records in 405872.00ms 420000/500000
+worker 1 UUIDV7: Inserted 10000 records in 405393.84ms 420000/500000
+worker 4 UUIDV7: Inserted 10000 records in 403547.21ms 420000/500000
+worker 6 UUIDV7: Inserted 10000 records in 404979.80ms 420000/500000
+worker 7 UUIDV7: Inserted 10000 records in 406217.96ms 420000/500000
+worker 3 UUIDV7: Inserted 10000 records in 405894.74ms 420000/500000
+worker 5 UUIDV7: Inserted 10000 records in 405398.09ms 420000/500000
+worker 2 UUIDV7: Inserted 10000 records in 405026.70ms 420000/500000
+worker 9 UUIDV7: Inserted 10000 records in 400861.83ms 430000/500000
+worker 8 UUIDV7: Inserted 10000 records in 400645.14ms 430000/500000
+worker 4 UUIDV7: Inserted 10000 records in 400075.54ms 430000/500000
+worker 0 UUIDV7: Inserted 10000 records in 401310.58ms 430000/500000
+worker 1 UUIDV7: Inserted 10000 records in 402561.76ms 430000/500000
+worker 6 UUIDV7: Inserted 10000 records in 402102.64ms 430000/500000
+worker 7 UUIDV7: Inserted 10000 records in 398799.25ms 430000/500000
+worker 5 UUIDV7: Inserted 10000 records in 398618.19ms 430000/500000
+worker 3 UUIDV7: Inserted 10000 records in 399954.86ms 430000/500000
+worker 2 UUIDV7: Inserted 10000 records in 400108.38ms 430000/500000
+worker 9 UUIDV7: Inserted 10000 records in 397205.46ms 440000/500000
+worker 8 UUIDV7: Inserted 10000 records in 397645.55ms 440000/500000
+worker 4 UUIDV7: Inserted 10000 records in 397794.09ms 440000/500000
+worker 0 UUIDV7: Inserted 10000 records in 397997.26ms 440000/500000
+worker 1 UUIDV7: Inserted 10000 records in 398713.35ms 440000/500000
+worker 6 UUIDV7: Inserted 10000 records in 398744.59ms 440000/500000
+worker 7 UUIDV7: Inserted 10000 records in 398001.55ms 440000/500000
+worker 3 UUIDV7: Inserted 10000 records in 397649.21ms 440000/500000
+worker 5 UUIDV7: Inserted 10000 records in 398742.27ms 440000/500000
+worker 2 UUIDV7: Inserted 10000 records in 399231.92ms 440000/500000
+worker 9 UUIDV7: Inserted 10000 records in 403779.85ms 450000/500000
+worker 4 UUIDV7: Inserted 10000 records in 402490.94ms 450000/500000
+worker 8 UUIDV7: Inserted 10000 records in 404053.79ms 450000/500000
+worker 0 UUIDV7: Inserted 10000 records in 403466.15ms 450000/500000
+worker 6 UUIDV7: Inserted 10000 records in 402419.88ms 450000/500000
+worker 1 UUIDV7: Inserted 10000 records in 404189.02ms 450000/500000
+worker 7 UUIDV7: Inserted 10000 records in 402931.42ms 450000/500000
+worker 3 UUIDV7: Inserted 10000 records in 402902.38ms 450000/500000
+worker 5 UUIDV7: Inserted 10000 records in 403943.53ms 450000/500000
+worker 2 UUIDV7: Inserted 10000 records in 401806.76ms 450000/500000
+worker 9 UUIDV7: Inserted 10000 records in 391429.73ms 460000/500000
+worker 0 UUIDV7: Inserted 10000 records in 388902.88ms 460000/500000
+worker 4 UUIDV7: Inserted 10000 records in 391136.61ms 460000/500000
+worker 8 UUIDV7: Inserted 10000 records in 391613.16ms 460000/500000
+worker 6 UUIDV7: Inserted 10000 records in 391205.30ms 460000/500000
+worker 1 UUIDV7: Inserted 10000 records in 391666.23ms 460000/500000
+worker 7 UUIDV7: Inserted 10000 records in 390584.53ms 460000/500000
+worker 3 UUIDV7: Inserted 10000 records in 390330.22ms 460000/500000
+worker 5 UUIDV7: Inserted 10000 records in 391926.10ms 460000/500000
+worker 2 UUIDV7: Inserted 10000 records in 391849.18ms 460000/500000
+worker 9 UUIDV7: Inserted 10000 records in 400459.08ms 470000/500000
+worker 0 UUIDV7: Inserted 10000 records in 399930.65ms 470000/500000
+worker 4 UUIDV7: Inserted 10000 records in 400922.26ms 470000/500000
+worker 8 UUIDV7: Inserted 10000 records in 401807.01ms 470000/500000
+worker 6 UUIDV7: Inserted 10000 records in 401485.35ms 470000/500000
+worker 3 UUIDV7: Inserted 10000 records in 401052.99ms 470000/500000
+worker 7 UUIDV7: Inserted 10000 records in 402419.08ms 470000/500000
+worker 1 UUIDV7: Inserted 10000 records in 402822.06ms 470000/500000
+worker 5 UUIDV7: Inserted 10000 records in 401065.52ms 470000/500000
+worker 2 UUIDV7: Inserted 10000 records in 400794.29ms 470000/500000
+worker 9 UUIDV7: Inserted 10000 records in 401151.31ms 480000/500000
+worker 0 UUIDV7: Inserted 10000 records in 402028.40ms 480000/500000
+worker 4 UUIDV7: Inserted 10000 records in 401750.69ms 480000/500000
+worker 8 UUIDV7: Inserted 10000 records in 401201.69ms 480000/500000
+worker 3 UUIDV7: Inserted 10000 records in 400916.63ms 480000/500000
+worker 6 UUIDV7: Inserted 10000 records in 402914.08ms 480000/500000
+worker 7 UUIDV7: Inserted 10000 records in 401645.61ms 480000/500000
+worker 1 UUIDV7: Inserted 10000 records in 402212.44ms 480000/500000
+worker 5 UUIDV7: Inserted 10000 records in 403945.47ms 480000/500000
+worker 2 UUIDV7: Inserted 10000 records in 402684.73ms 480000/500000
+worker 9 UUIDV7: Inserted 10000 records in 395365.92ms 490000/500000
+worker 0 UUIDV7: Inserted 10000 records in 394408.54ms 490000/500000
+worker 4 UUIDV7: Inserted 10000 records in 395782.36ms 490000/500000
+worker 8 UUIDV7: Inserted 10000 records in 396475.78ms 490000/500000
+worker 3 UUIDV7: Inserted 10000 records in 394802.18ms 490000/500000
+worker 6 UUIDV7: Inserted 10000 records in 395299.51ms 490000/500000
+worker 7 UUIDV7: Inserted 10000 records in 395006.23ms 490000/500000
+worker 1 UUIDV7: Inserted 10000 records in 395606.84ms 490000/500000
+worker 5 UUIDV7: Inserted 10000 records in 394152.46ms 490000/500000
+worker 2 UUIDV7: Inserted 10000 records in 393157.42ms 490000/500000
+worker 9 UUIDV7: Inserted 10000 records in 412404.60ms 500000/500000
+worker 0 UUIDV7: Inserted 10000 records in 413197.43ms 500000/500000
+worker 4 UUIDV7: Inserted 10000 records in 413116.46ms 500000/500000
+worker 8 UUIDV7: Inserted 10000 records in 412631.64ms 500000/500000
+worker 3 UUIDV7: Inserted 10000 records in 412996.16ms 500000/500000
+worker 6 UUIDV7: Inserted 10000 records in 412478.63ms 500000/500000
+worker 7 UUIDV7: Inserted 10000 records in 412482.71ms 500000/500000
+worker 1 UUIDV7: Inserted 10000 records in 411165.68ms 500000/500000
+worker 5 UUIDV7: Inserted 10000 records in 411978.80ms 500000/500000
+worker 2 UUIDV7: Inserted 10000 records in 411328.74ms 500000/500000
+All records inserted successfully!
+UUIDV7 experiment ended
+------------------------------------------------------------
+Starting INT experiment...
+Stopping Docker Compose...
+Stopping experiment_db ... done
+Removing experiment_db ... done
+Removing network go-multithread-experement_default
+Docker Compose stopped
+Deleting Docker volume...
+go-multithread-experement_mysql-db
+Docker volume deleted
+Starting Docker Compose...
+Creating network "go-multithread-experement_default" with the default driver
+Creating volume "go-multithread-experement_mysql-db" with default driver
+Creating experiment_db ... done
+Waiting for MySQL service to be ready[mysql] 2024/01/12 11:30:13 packets.go:37: unexpected EOF
+[mysql] 2024/01/12 11:30:13 packets.go:37: unexpected EOF
+[mysql] 2024/01/12 11:30:13 packets.go:37: unexpected EOF
+Docker Compose started
+Starting INT insertions....
+worker 7 INT: Inserted 10000 records in 238622.38ms 10000/500000
+worker 4 INT: Inserted 10000 records in 239181.89ms 10000/500000
+worker 8 INT: Inserted 10000 records in 239342.77ms 10000/500000
+worker 5 INT: Inserted 10000 records in 239381.85ms 10000/500000
+worker 2 INT: Inserted 10000 records in 239491.24ms 10000/500000
+worker 6 INT: Inserted 10000 records in 239652.39ms 10000/500000
+worker 0 INT: Inserted 10000 records in 239778.73ms 10000/500000
+worker 9 INT: Inserted 10000 records in 239850.63ms 10000/500000
+worker 1 INT: Inserted 10000 records in 240122.00ms 10000/500000
+worker 3 INT: Inserted 10000 records in 240262.65ms 10000/500000
+worker 7 INT: Inserted 10000 records in 361003.84ms 20000/500000
+worker 2 INT: Inserted 10000 records in 360363.03ms 20000/500000
+worker 4 INT: Inserted 10000 records in 360747.74ms 20000/500000
+worker 8 INT: Inserted 10000 records in 360802.65ms 20000/500000
+worker 1 INT: Inserted 10000 records in 360245.69ms 20000/500000
+worker 0 INT: Inserted 10000 records in 360710.44ms 20000/500000
+worker 6 INT: Inserted 10000 records in 361077.26ms 20000/500000
+worker 5 INT: Inserted 10000 records in 361477.81ms 20000/500000
+worker 9 INT: Inserted 10000 records in 361049.66ms 20000/500000
+worker 3 INT: Inserted 10000 records in 361440.81ms 20000/500000
+worker 1 INT: Inserted 10000 records in 362579.74ms 30000/500000
+worker 8 INT: Inserted 10000 records in 363335.35ms 30000/500000
+worker 2 INT: Inserted 10000 records in 363898.52ms 30000/500000
+worker 9 INT: Inserted 10000 records in 363007.59ms 30000/500000
+worker 7 INT: Inserted 10000 records in 364363.72ms 30000/500000
+worker 4 INT: Inserted 10000 records in 364289.30ms 30000/500000
+worker 0 INT: Inserted 10000 records in 363899.38ms 30000/500000
+worker 5 INT: Inserted 10000 records in 363778.30ms 30000/500000
+worker 6 INT: Inserted 10000 records in 364040.16ms 30000/500000
+worker 3 INT: Inserted 10000 records in 363873.13ms 30000/500000
+worker 8 INT: Inserted 10000 records in 357999.50ms 40000/500000
+worker 1 INT: Inserted 10000 records in 358611.99ms 40000/500000
+worker 0 INT: Inserted 10000 records in 358617.52ms 40000/500000
+worker 5 INT: Inserted 10000 records in 358433.66ms 40000/500000
+worker 9 INT: Inserted 10000 records in 359301.35ms 40000/500000
+worker 2 INT: Inserted 10000 records in 359496.47ms 40000/500000
+worker 4 INT: Inserted 10000 records in 359119.58ms 40000/500000
+worker 7 INT: Inserted 10000 records in 359541.63ms 40000/500000
+worker 6 INT: Inserted 10000 records in 358851.03ms 40000/500000
+worker 3 INT: Inserted 10000 records in 358910.13ms 40000/500000
+worker 1 INT: Inserted 10000 records in 358652.35ms 50000/500000
+worker 8 INT: Inserted 10000 records in 358845.60ms 50000/500000
+worker 0 INT: Inserted 10000 records in 358678.27ms 50000/500000
+worker 7 INT: Inserted 10000 records in 358178.89ms 50000/500000
+worker 2 INT: Inserted 10000 records in 358708.84ms 50000/500000
+worker 4 INT: Inserted 10000 records in 358956.82ms 50000/500000
+worker 9 INT: Inserted 10000 records in 359177.39ms 50000/500000
+worker 5 INT: Inserted 10000 records in 359556.06ms 50000/500000
+worker 6 INT: Inserted 10000 records in 359408.17ms 50000/500000
+worker 3 INT: Inserted 10000 records in 359014.99ms 50000/500000
+worker 8 INT: Inserted 10000 records in 357193.73ms 60000/500000
+worker 1 INT: Inserted 10000 records in 358001.57ms 60000/500000
+worker 0 INT: Inserted 10000 records in 356848.91ms 60000/500000
+worker 7 INT: Inserted 10000 records in 357302.27ms 60000/500000
+worker 4 INT: Inserted 10000 records in 356807.80ms 60000/500000
+worker 2 INT: Inserted 10000 records in 357570.40ms 60000/500000
+worker 9 INT: Inserted 10000 records in 357245.18ms 60000/500000
+worker 6 INT: Inserted 10000 records in 357421.49ms 60000/500000
+worker 5 INT: Inserted 10000 records in 357901.28ms 60000/500000
+worker 3 INT: Inserted 10000 records in 357152.78ms 60000/500000
+worker 8 INT: Inserted 10000 records in 357134.42ms 70000/500000
+worker 1 INT: Inserted 10000 records in 357204.93ms 70000/500000
+worker 0 INT: Inserted 10000 records in 357052.06ms 70000/500000
+worker 7 INT: Inserted 10000 records in 357173.72ms 70000/500000
+worker 4 INT: Inserted 10000 records in 357381.08ms 70000/500000
+worker 2 INT: Inserted 10000 records in 357170.02ms 70000/500000
+worker 9 INT: Inserted 10000 records in 357972.87ms 70000/500000
+worker 5 INT: Inserted 10000 records in 357182.46ms 70000/500000
+worker 3 INT: Inserted 10000 records in 357664.57ms 70000/500000
+worker 6 INT: Inserted 10000 records in 357922.69ms 70000/500000
+worker 8 INT: Inserted 10000 records in 358252.56ms 80000/500000
+worker 1 INT: Inserted 10000 records in 357721.99ms 80000/500000
+worker 4 INT: Inserted 10000 records in 357745.44ms 80000/500000
+worker 0 INT: Inserted 10000 records in 358765.65ms 80000/500000
+worker 7 INT: Inserted 10000 records in 358288.31ms 80000/500000
+worker 2 INT: Inserted 10000 records in 358028.41ms 80000/500000
+worker 9 INT: Inserted 10000 records in 358666.13ms 80000/500000
+worker 3 INT: Inserted 10000 records in 358095.19ms 80000/500000
+worker 5 INT: Inserted 10000 records in 358852.84ms 80000/500000
+worker 6 INT: Inserted 10000 records in 358496.00ms 80000/500000
+worker 1 INT: Inserted 10000 records in 358715.49ms 90000/500000
+worker 8 INT: Inserted 10000 records in 359680.79ms 90000/500000
+worker 7 INT: Inserted 10000 records in 359018.31ms 90000/500000
+worker 0 INT: Inserted 10000 records in 359170.20ms 90000/500000
+worker 4 INT: Inserted 10000 records in 359295.88ms 90000/500000
+worker 2 INT: Inserted 10000 records in 360232.84ms 90000/500000
+worker 6 INT: Inserted 10000 records in 358302.55ms 90000/500000
+worker 5 INT: Inserted 10000 records in 358914.61ms 90000/500000
+worker 9 INT: Inserted 10000 records in 359484.16ms 90000/500000
+worker 3 INT: Inserted 10000 records in 359979.71ms 90000/500000
+worker 1 INT: Inserted 10000 records in 356488.79ms 100000/500000
+worker 8 INT: Inserted 10000 records in 357915.24ms 100000/500000
+worker 0 INT: Inserted 10000 records in 357294.76ms 100000/500000
+worker 4 INT: Inserted 10000 records in 358170.36ms 100000/500000
+worker 5 INT: Inserted 10000 records in 356749.03ms 100000/500000
+worker 6 INT: Inserted 10000 records in 357136.88ms 100000/500000
+worker 7 INT: Inserted 10000 records in 358858.54ms 100000/500000
+worker 3 INT: Inserted 10000 records in 356504.65ms 100000/500000
+worker 9 INT: Inserted 10000 records in 357317.53ms 100000/500000
+worker 2 INT: Inserted 10000 records in 358218.53ms 100000/500000
+worker 1 INT: Inserted 10000 records in 356066.70ms 110000/500000
+worker 0 INT: Inserted 10000 records in 354196.87ms 110000/500000
+worker 8 INT: Inserted 10000 records in 355734.92ms 110000/500000
+worker 4 INT: Inserted 10000 records in 355419.39ms 110000/500000
+worker 6 INT: Inserted 10000 records in 355254.42ms 110000/500000
+worker 9 INT: Inserted 10000 records in 355084.63ms 110000/500000
+worker 7 INT: Inserted 10000 records in 355885.75ms 110000/500000
+worker 5 INT: Inserted 10000 records in 356246.73ms 110000/500000
+worker 2 INT: Inserted 10000 records in 355924.62ms 110000/500000
+worker 3 INT: Inserted 10000 records in 356649.66ms 110000/500000
+worker 1 INT: Inserted 10000 records in 359316.58ms 120000/500000
+worker 0 INT: Inserted 10000 records in 359224.56ms 120000/500000
+worker 6 INT: Inserted 10000 records in 358432.39ms 120000/500000
+worker 8 INT: Inserted 10000 records in 360015.21ms 120000/500000
+worker 4 INT: Inserted 10000 records in 359716.39ms 120000/500000
+worker 2 INT: Inserted 10000 records in 358538.04ms 120000/500000
+worker 9 INT: Inserted 10000 records in 359519.85ms 120000/500000
+worker 5 INT: Inserted 10000 records in 359504.49ms 120000/500000
+worker 7 INT: Inserted 10000 records in 359813.38ms 120000/500000
+worker 3 INT: Inserted 10000 records in 359798.11ms 120000/500000
+worker 1 INT: Inserted 10000 records in 357549.24ms 130000/500000
+worker 0 INT: Inserted 10000 records in 358310.12ms 130000/500000
+worker 6 INT: Inserted 10000 records in 358890.59ms 130000/500000
+worker 9 INT: Inserted 10000 records in 357351.36ms 130000/500000
+worker 4 INT: Inserted 10000 records in 358541.59ms 130000/500000
+worker 8 INT: Inserted 10000 records in 359257.97ms 130000/500000
+worker 2 INT: Inserted 10000 records in 358896.31ms 130000/500000
+worker 7 INT: Inserted 10000 records in 358767.54ms 130000/500000
+worker 5 INT: Inserted 10000 records in 358964.93ms 130000/500000
+worker 3 INT: Inserted 10000 records in 358464.12ms 130000/500000
+worker 1 INT: Inserted 10000 records in 359570.78ms 140000/500000
+worker 0 INT: Inserted 10000 records in 359293.30ms 140000/500000
+worker 6 INT: Inserted 10000 records in 357436.95ms 140000/500000
+worker 9 INT: Inserted 10000 records in 357591.47ms 140000/500000
+worker 8 INT: Inserted 10000 records in 357764.39ms 140000/500000
+worker 4 INT: Inserted 10000 records in 357901.55ms 140000/500000
+worker 7 INT: Inserted 10000 records in 357961.75ms 140000/500000
+worker 5 INT: Inserted 10000 records in 358281.66ms 140000/500000
+worker 2 INT: Inserted 10000 records in 358806.51ms 140000/500000
+worker 3 INT: Inserted 10000 records in 357844.01ms 140000/500000
+worker 1 INT: Inserted 10000 records in 358923.99ms 150000/500000
+worker 0 INT: Inserted 10000 records in 358450.96ms 150000/500000
+worker 6 INT: Inserted 10000 records in 359188.23ms 150000/500000
+worker 4 INT: Inserted 10000 records in 359303.02ms 150000/500000
+worker 8 INT: Inserted 10000 records in 359497.61ms 150000/500000
+worker 9 INT: Inserted 10000 records in 360184.62ms 150000/500000
+worker 2 INT: Inserted 10000 records in 358611.98ms 150000/500000
+worker 7 INT: Inserted 10000 records in 359469.80ms 150000/500000
+worker 5 INT: Inserted 10000 records in 360011.55ms 150000/500000
+worker 3 INT: Inserted 10000 records in 359805.16ms 150000/500000
+worker 1 INT: Inserted 10000 records in 358519.42ms 160000/500000
+worker 0 INT: Inserted 10000 records in 358769.70ms 160000/500000
+worker 6 INT: Inserted 10000 records in 358752.15ms 160000/500000
+worker 4 INT: Inserted 10000 records in 358253.88ms 160000/500000
+worker 8 INT: Inserted 10000 records in 358829.20ms 160000/500000
+worker 9 INT: Inserted 10000 records in 359063.47ms 160000/500000
+worker 7 INT: Inserted 10000 records in 358362.08ms 160000/500000
+worker 2 INT: Inserted 10000 records in 359268.50ms 160000/500000
+worker 3 INT: Inserted 10000 records in 358738.75ms 160000/500000
+worker 5 INT: Inserted 10000 records in 359069.54ms 160000/500000
+worker 1 INT: Inserted 10000 records in 360466.27ms 170000/500000
+worker 0 INT: Inserted 10000 records in 360548.80ms 170000/500000
+worker 6 INT: Inserted 10000 records in 360564.16ms 170000/500000
+worker 4 INT: Inserted 10000 records in 360085.57ms 170000/500000
+worker 9 INT: Inserted 10000 records in 359164.56ms 170000/500000
+worker 8 INT: Inserted 10000 records in 359886.96ms 170000/500000
+worker 7 INT: Inserted 10000 records in 359878.66ms 170000/500000
+worker 3 INT: Inserted 10000 records in 359850.66ms 170000/500000
+worker 5 INT: Inserted 10000 records in 359809.88ms 170000/500000
+worker 2 INT: Inserted 10000 records in 361000.59ms 170000/500000
+worker 0 INT: Inserted 10000 records in 356306.16ms 180000/500000
+worker 1 INT: Inserted 10000 records in 357762.14ms 180000/500000
+worker 9 INT: Inserted 10000 records in 357156.48ms 180000/500000
+worker 8 INT: Inserted 10000 records in 357336.57ms 180000/500000
+worker 4 INT: Inserted 10000 records in 358122.23ms 180000/500000
+worker 6 INT: Inserted 10000 records in 358379.78ms 180000/500000
+worker 7 INT: Inserted 10000 records in 357150.06ms 180000/500000
+worker 3 INT: Inserted 10000 records in 356583.92ms 180000/500000
+worker 2 INT: Inserted 10000 records in 356879.65ms 180000/500000
+worker 5 INT: Inserted 10000 records in 356998.80ms 180000/500000
+worker 0 INT: Inserted 10000 records in 359482.88ms 190000/500000
+worker 1 INT: Inserted 10000 records in 359401.51ms 190000/500000
+worker 9 INT: Inserted 10000 records in 359710.53ms 190000/500000
+worker 8 INT: Inserted 10000 records in 359941.70ms 190000/500000
+worker 7 INT: Inserted 10000 records in 359436.69ms 190000/500000
+worker 4 INT: Inserted 10000 records in 360256.68ms 190000/500000
+worker 6 INT: Inserted 10000 records in 360132.97ms 190000/500000
+worker 3 INT: Inserted 10000 records in 359421.14ms 190000/500000
+worker 2 INT: Inserted 10000 records in 360310.39ms 190000/500000
+worker 5 INT: Inserted 10000 records in 360741.58ms 190000/500000
+worker 0 INT: Inserted 10000 records in 357911.33ms 200000/500000
+worker 1 INT: Inserted 10000 records in 357596.19ms 200000/500000
+worker 9 INT: Inserted 10000 records in 358363.51ms 200000/500000
+worker 4 INT: Inserted 10000 records in 357480.38ms 200000/500000
+worker 6 INT: Inserted 10000 records in 357861.04ms 200000/500000
+worker 7 INT: Inserted 10000 records in 358411.34ms 200000/500000
+worker 8 INT: Inserted 10000 records in 359209.34ms 200000/500000
+worker 3 INT: Inserted 10000 records in 359476.44ms 200000/500000
+worker 2 INT: Inserted 10000 records in 358124.54ms 200000/500000
+worker 5 INT: Inserted 10000 records in 358985.06ms 200000/500000
+worker 0 INT: Inserted 10000 records in 358581.65ms 210000/500000
+worker 1 INT: Inserted 10000 records in 358589.33ms 210000/500000
+worker 9 INT: Inserted 10000 records in 357742.51ms 210000/500000
+worker 6 INT: Inserted 10000 records in 357954.64ms 210000/500000
+worker 4 INT: Inserted 10000 records in 358691.09ms 210000/500000
+worker 7 INT: Inserted 10000 records in 358554.01ms 210000/500000
+worker 8 INT: Inserted 10000 records in 358537.97ms 210000/500000
+worker 2 INT: Inserted 10000 records in 358674.58ms 210000/500000
+worker 3 INT: Inserted 10000 records in 359169.56ms 210000/500000
+worker 5 INT: Inserted 10000 records in 358994.21ms 210000/500000
+worker 1 INT: Inserted 10000 records in 357878.35ms 220000/500000
+worker 0 INT: Inserted 10000 records in 358500.37ms 220000/500000
+worker 9 INT: Inserted 10000 records in 357651.24ms 220000/500000
+worker 6 INT: Inserted 10000 records in 357035.30ms 220000/500000
+worker 4 INT: Inserted 10000 records in 357377.12ms 220000/500000
+worker 7 INT: Inserted 10000 records in 357376.20ms 220000/500000
+worker 8 INT: Inserted 10000 records in 358181.43ms 220000/500000
+worker 2 INT: Inserted 10000 records in 357403.35ms 220000/500000
+worker 3 INT: Inserted 10000 records in 357775.99ms 220000/500000
+worker 5 INT: Inserted 10000 records in 357961.22ms 220000/500000
+worker 1 INT: Inserted 10000 records in 357033.46ms 230000/500000
+worker 0 INT: Inserted 10000 records in 357146.27ms 230000/500000
+worker 9 INT: Inserted 10000 records in 357623.18ms 230000/500000
+worker 6 INT: Inserted 10000 records in 358180.86ms 230000/500000
+worker 4 INT: Inserted 10000 records in 357888.04ms 230000/500000
+worker 7 INT: Inserted 10000 records in 358518.62ms 230000/500000
+worker 8 INT: Inserted 10000 records in 358434.58ms 230000/500000
+worker 2 INT: Inserted 10000 records in 358253.26ms 230000/500000
+worker 3 INT: Inserted 10000 records in 358499.41ms 230000/500000
+worker 5 INT: Inserted 10000 records in 358043.00ms 230000/500000
+worker 0 INT: Inserted 10000 records in 358309.72ms 240000/500000
+worker 1 INT: Inserted 10000 records in 359350.27ms 240000/500000
+worker 9 INT: Inserted 10000 records in 358726.28ms 240000/500000
+worker 6 INT: Inserted 10000 records in 358541.42ms 240000/500000
+worker 4 INT: Inserted 10000 records in 359238.40ms 240000/500000
+worker 7 INT: Inserted 10000 records in 358491.64ms 240000/500000
+worker 8 INT: Inserted 10000 records in 358315.53ms 240000/500000
+worker 2 INT: Inserted 10000 records in 358175.83ms 240000/500000
+worker 3 INT: Inserted 10000 records in 357777.93ms 240000/500000
+worker 5 INT: Inserted 10000 records in 359025.37ms 240000/500000
+worker 1 INT: Inserted 10000 records in 356444.30ms 250000/500000
+worker 0 INT: Inserted 10000 records in 357409.28ms 250000/500000
+worker 9 INT: Inserted 10000 records in 356262.40ms 250000/500000
+worker 4 INT: Inserted 10000 records in 356439.93ms 250000/500000
+worker 6 INT: Inserted 10000 records in 357500.87ms 250000/500000
+worker 2 INT: Inserted 10000 records in 355735.66ms 250000/500000
+worker 8 INT: Inserted 10000 records in 356452.66ms 250000/500000
+worker 7 INT: Inserted 10000 records in 358156.69ms 250000/500000
+worker 3 INT: Inserted 10000 records in 357727.94ms 250000/500000
+worker 5 INT: Inserted 10000 records in 356798.30ms 250000/500000
+worker 0 INT: Inserted 10000 records in 357880.78ms 260000/500000
+worker 1 INT: Inserted 10000 records in 358813.90ms 260000/500000
+worker 9 INT: Inserted 10000 records in 358493.95ms 260000/500000
+worker 6 INT: Inserted 10000 records in 358237.59ms 260000/500000
+worker 4 INT: Inserted 10000 records in 358569.85ms 260000/500000
+worker 8 INT: Inserted 10000 records in 358170.04ms 260000/500000
+worker 2 INT: Inserted 10000 records in 358475.34ms 260000/500000
+worker 7 INT: Inserted 10000 records in 357674.68ms 260000/500000
+worker 5 INT: Inserted 10000 records in 357700.68ms 260000/500000
+worker 3 INT: Inserted 10000 records in 359037.98ms 260000/500000
+worker 0 INT: Inserted 10000 records in 358162.05ms 270000/500000
+worker 1 INT: Inserted 10000 records in 358395.18ms 270000/500000
+worker 9 INT: Inserted 10000 records in 358553.94ms 270000/500000
+worker 6 INT: Inserted 10000 records in 357149.65ms 270000/500000
+worker 4 INT: Inserted 10000 records in 357295.28ms 270000/500000
+worker 7 INT: Inserted 10000 records in 356998.35ms 270000/500000
+worker 8 INT: Inserted 10000 records in 357700.96ms 270000/500000
+worker 2 INT: Inserted 10000 records in 358298.56ms 270000/500000
+worker 3 INT: Inserted 10000 records in 356705.68ms 270000/500000
+worker 5 INT: Inserted 10000 records in 358479.14ms 270000/500000
+worker 0 INT: Inserted 10000 records in 358622.65ms 280000/500000
+worker 1 INT: Inserted 10000 records in 359061.30ms 280000/500000
+worker 9 INT: Inserted 10000 records in 357796.16ms 280000/500000
+worker 6 INT: Inserted 10000 records in 359342.18ms 280000/500000
+worker 7 INT: Inserted 10000 records in 358075.64ms 280000/500000
+worker 4 INT: Inserted 10000 records in 359288.78ms 280000/500000
+worker 8 INT: Inserted 10000 records in 358308.23ms 280000/500000
+worker 2 INT: Inserted 10000 records in 358258.82ms 280000/500000
+worker 3 INT: Inserted 10000 records in 359259.09ms 280000/500000
+worker 5 INT: Inserted 10000 records in 357991.28ms 280000/500000
+worker 0 INT: Inserted 10000 records in 360124.79ms 290000/500000
+worker 1 INT: Inserted 10000 records in 359701.99ms 290000/500000
+worker 9 INT: Inserted 10000 records in 359944.12ms 290000/500000
+worker 7 INT: Inserted 10000 records in 359018.60ms 290000/500000
+worker 6 INT: Inserted 10000 records in 360108.62ms 290000/500000
+worker 4 INT: Inserted 10000 records in 360074.88ms 290000/500000
+worker 8 INT: Inserted 10000 records in 360240.15ms 290000/500000
+worker 2 INT: Inserted 10000 records in 359702.32ms 290000/500000
+worker 3 INT: Inserted 10000 records in 359353.14ms 290000/500000
+worker 5 INT: Inserted 10000 records in 359171.22ms 290000/500000
+worker 0 INT: Inserted 10000 records in 358234.21ms 300000/500000
+worker 1 INT: Inserted 10000 records in 357963.95ms 300000/500000
+worker 9 INT: Inserted 10000 records in 358068.46ms 300000/500000
+worker 7 INT: Inserted 10000 records in 358834.36ms 300000/500000
+worker 6 INT: Inserted 10000 records in 358121.02ms 300000/500000
+worker 4 INT: Inserted 10000 records in 357773.87ms 300000/500000
+worker 8 INT: Inserted 10000 records in 358362.49ms 300000/500000
+worker 2 INT: Inserted 10000 records in 359231.97ms 300000/500000
+worker 3 INT: Inserted 10000 records in 358490.81ms 300000/500000
+worker 5 INT: Inserted 10000 records in 359177.79ms 300000/500000
+worker 0 INT: Inserted 10000 records in 360356.83ms 310000/500000
+worker 9 INT: Inserted 10000 records in 359671.34ms 310000/500000
+worker 1 INT: Inserted 10000 records in 360213.57ms 310000/500000
+worker 7 INT: Inserted 10000 records in 358824.92ms 310000/500000
+worker 6 INT: Inserted 10000 records in 359392.93ms 310000/500000
+worker 4 INT: Inserted 10000 records in 359949.88ms 310000/500000
+worker 8 INT: Inserted 10000 records in 359169.29ms 310000/500000
+worker 2 INT: Inserted 10000 records in 359984.90ms 310000/500000
+worker 3 INT: Inserted 10000 records in 359978.59ms 310000/500000
+worker 5 INT: Inserted 10000 records in 359334.70ms 310000/500000
+worker 9 INT: Inserted 10000 records in 358871.45ms 320000/500000
+worker 1 INT: Inserted 10000 records in 359299.87ms 320000/500000
+worker 0 INT: Inserted 10000 records in 359909.85ms 320000/500000
+worker 8 INT: Inserted 10000 records in 358321.95ms 320000/500000
+worker 6 INT: Inserted 10000 records in 359516.66ms 320000/500000
+worker 4 INT: Inserted 10000 records in 359005.54ms 320000/500000
+worker 7 INT: Inserted 10000 records in 360570.05ms 320000/500000
+worker 2 INT: Inserted 10000 records in 359526.72ms 320000/500000
+worker 3 INT: Inserted 10000 records in 359573.54ms 320000/500000
+worker 5 INT: Inserted 10000 records in 359364.23ms 320000/500000
+worker 9 INT: Inserted 10000 records in 359861.99ms 330000/500000
+worker 1 INT: Inserted 10000 records in 360408.69ms 330000/500000
+worker 0 INT: Inserted 10000 records in 360823.14ms 330000/500000
+worker 8 INT: Inserted 10000 records in 359563.27ms 330000/500000
+worker 4 INT: Inserted 10000 records in 359490.16ms 330000/500000
+worker 7 INT: Inserted 10000 records in 359517.18ms 330000/500000
+worker 6 INT: Inserted 10000 records in 360234.40ms 330000/500000
+worker 2 INT: Inserted 10000 records in 360895.14ms 330000/500000
+worker 5 INT: Inserted 10000 records in 360202.21ms 330000/500000
+worker 3 INT: Inserted 10000 records in 360286.52ms 330000/500000
+worker 1 INT: Inserted 10000 records in 357608.92ms 340000/500000
+worker 0 INT: Inserted 10000 records in 357125.74ms 340000/500000
+worker 9 INT: Inserted 10000 records in 359099.12ms 340000/500000
+worker 4 INT: Inserted 10000 records in 357184.65ms 340000/500000
+worker 7 INT: Inserted 10000 records in 358736.24ms 340000/500000
+worker 6 INT: Inserted 10000 records in 358372.53ms 340000/500000
+worker 8 INT: Inserted 10000 records in 359274.65ms 340000/500000
+worker 2 INT: Inserted 10000 records in 359028.71ms 340000/500000
+worker 3 INT: Inserted 10000 records in 358393.74ms 340000/500000
+worker 5 INT: Inserted 10000 records in 359152.02ms 340000/500000
+worker 1 INT: Inserted 10000 records in 358106.76ms 350000/500000
+worker 0 INT: Inserted 10000 records in 358791.61ms 350000/500000
+worker 9 INT: Inserted 10000 records in 358923.20ms 350000/500000
+worker 4 INT: Inserted 10000 records in 359225.06ms 350000/500000
+worker 7 INT: Inserted 10000 records in 358617.42ms 350000/500000
+worker 8 INT: Inserted 10000 records in 358646.20ms 350000/500000
+worker 6 INT: Inserted 10000 records in 358959.47ms 350000/500000
+worker 3 INT: Inserted 10000 records in 358513.56ms 350000/500000
+worker 5 INT: Inserted 10000 records in 358397.89ms 350000/500000
+worker 2 INT: Inserted 10000 records in 359857.47ms 350000/500000
+worker 1 INT: Inserted 10000 records in 358041.22ms 360000/500000
+worker 0 INT: Inserted 10000 records in 358219.25ms 360000/500000
+worker 9 INT: Inserted 10000 records in 358184.91ms 360000/500000
+worker 4 INT: Inserted 10000 records in 358346.21ms 360000/500000
+worker 7 INT: Inserted 10000 records in 357989.18ms 360000/500000
+worker 8 INT: Inserted 10000 records in 358193.44ms 360000/500000
+worker 6 INT: Inserted 10000 records in 358233.42ms 360000/500000
+worker 3 INT: Inserted 10000 records in 358044.83ms 360000/500000
+worker 5 INT: Inserted 10000 records in 358279.80ms 360000/500000
+worker 2 INT: Inserted 10000 records in 358000.52ms 360000/500000
+worker 1 INT: Inserted 10000 records in 359057.47ms 370000/500000
+worker 0 INT: Inserted 10000 records in 358422.74ms 370000/500000
+worker 9 INT: Inserted 10000 records in 358581.44ms 370000/500000
+worker 4 INT: Inserted 10000 records in 357941.79ms 370000/500000
+worker 7 INT: Inserted 10000 records in 358642.37ms 370000/500000
+worker 6 INT: Inserted 10000 records in 358615.05ms 370000/500000
+worker 8 INT: Inserted 10000 records in 359419.54ms 370000/500000
+worker 5 INT: Inserted 10000 records in 357796.73ms 370000/500000
+worker 3 INT: Inserted 10000 records in 359283.72ms 370000/500000
+worker 2 INT: Inserted 10000 records in 359035.68ms 370000/500000
+worker 1 INT: Inserted 10000 records in 359909.36ms 380000/500000
+worker 0 INT: Inserted 10000 records in 360223.90ms 380000/500000
+worker 4 INT: Inserted 10000 records in 360403.85ms 380000/500000
+worker 9 INT: Inserted 10000 records in 360877.24ms 380000/500000
+worker 7 INT: Inserted 10000 records in 360238.08ms 380000/500000
+worker 6 INT: Inserted 10000 records in 359747.29ms 380000/500000
+worker 8 INT: Inserted 10000 records in 360684.85ms 380000/500000
+worker 5 INT: Inserted 10000 records in 360690.89ms 380000/500000
+worker 3 INT: Inserted 10000 records in 360211.32ms 380000/500000
+worker 2 INT: Inserted 10000 records in 359806.13ms 380000/500000
+worker 0 INT: Inserted 10000 records in 359388.05ms 390000/500000
+worker 1 INT: Inserted 10000 records in 360404.12ms 390000/500000
+worker 4 INT: Inserted 10000 records in 359595.38ms 390000/500000
+worker 9 INT: Inserted 10000 records in 359506.51ms 390000/500000
+worker 7 INT: Inserted 10000 records in 359213.10ms 390000/500000
+worker 6 INT: Inserted 10000 records in 359285.21ms 390000/500000
+worker 8 INT: Inserted 10000 records in 360314.34ms 390000/500000
+worker 5 INT: Inserted 10000 records in 359011.13ms 390000/500000
+worker 3 INT: Inserted 10000 records in 359093.69ms 390000/500000
+worker 2 INT: Inserted 10000 records in 358824.08ms 390000/500000
+worker 1 INT: Inserted 10000 records in 357948.79ms 400000/500000
+worker 0 INT: Inserted 10000 records in 358858.92ms 400000/500000
+worker 9 INT: Inserted 10000 records in 358535.93ms 400000/500000
+worker 4 INT: Inserted 10000 records in 358917.53ms 400000/500000
+worker 7 INT: Inserted 10000 records in 358804.60ms 400000/500000
+worker 6 INT: Inserted 10000 records in 358811.65ms 400000/500000
+worker 8 INT: Inserted 10000 records in 358712.88ms 400000/500000
+worker 2 INT: Inserted 10000 records in 358436.95ms 400000/500000
+worker 5 INT: Inserted 10000 records in 359225.54ms 400000/500000
+worker 3 INT: Inserted 10000 records in 359285.61ms 400000/500000
+worker 1 INT: Inserted 10000 records in 360124.41ms 410000/500000
+worker 9 INT: Inserted 10000 records in 358866.89ms 410000/500000
+worker 0 INT: Inserted 10000 records in 359838.79ms 410000/500000
+worker 4 INT: Inserted 10000 records in 359869.06ms 410000/500000
+worker 7 INT: Inserted 10000 records in 359541.35ms 410000/500000
+worker 6 INT: Inserted 10000 records in 359911.51ms 410000/500000
+worker 8 INT: Inserted 10000 records in 359880.45ms 410000/500000
+worker 5 INT: Inserted 10000 records in 359806.16ms 410000/500000
+worker 2 INT: Inserted 10000 records in 360330.79ms 410000/500000
+worker 3 INT: Inserted 10000 records in 359679.56ms 410000/500000
+worker 1 INT: Inserted 10000 records in 357738.31ms 420000/500000
+worker 9 INT: Inserted 10000 records in 358087.95ms 420000/500000
+worker 0 INT: Inserted 10000 records in 358638.66ms 420000/500000
+worker 4 INT: Inserted 10000 records in 357906.69ms 420000/500000
+worker 7 INT: Inserted 10000 records in 357809.89ms 420000/500000
+worker 6 INT: Inserted 10000 records in 358273.47ms 420000/500000
+worker 8 INT: Inserted 10000 records in 357533.91ms 420000/500000
+worker 2 INT: Inserted 10000 records in 358086.05ms 420000/500000
+worker 3 INT: Inserted 10000 records in 358287.86ms 420000/500000
+worker 5 INT: Inserted 10000 records in 358839.35ms 420000/500000
+worker 1 INT: Inserted 10000 records in 356295.66ms 430000/500000
+worker 9 INT: Inserted 10000 records in 356341.73ms 430000/500000
+worker 4 INT: Inserted 10000 records in 355873.14ms 430000/500000
+worker 0 INT: Inserted 10000 records in 356482.55ms 430000/500000
+worker 7 INT: Inserted 10000 records in 356225.74ms 430000/500000
+worker 6 INT: Inserted 10000 records in 356652.82ms 430000/500000
+worker 8 INT: Inserted 10000 records in 357240.38ms 430000/500000
+worker 2 INT: Inserted 10000 records in 356932.42ms 430000/500000
+worker 3 INT: Inserted 10000 records in 357618.18ms 430000/500000
+worker 5 INT: Inserted 10000 records in 357342.93ms 430000/500000
+worker 1 INT: Inserted 10000 records in 356018.06ms 440000/500000
+worker 9 INT: Inserted 10000 records in 356273.24ms 440000/500000
+worker 4 INT: Inserted 10000 records in 357059.36ms 440000/500000
+worker 0 INT: Inserted 10000 records in 356869.05ms 440000/500000
+worker 7 INT: Inserted 10000 records in 356656.22ms 440000/500000
+worker 6 INT: Inserted 10000 records in 356845.90ms 440000/500000
+worker 8 INT: Inserted 10000 records in 356677.45ms 440000/500000
+worker 2 INT: Inserted 10000 records in 356119.62ms 440000/500000
+worker 5 INT: Inserted 10000 records in 356111.32ms 440000/500000
+worker 3 INT: Inserted 10000 records in 356661.15ms 440000/500000
+worker 1 INT: Inserted 10000 records in 357223.59ms 450000/500000
+worker 4 INT: Inserted 10000 records in 357383.27ms 450000/500000
+worker 9 INT: Inserted 10000 records in 358875.99ms 450000/500000
+worker 0 INT: Inserted 10000 records in 357443.62ms 450000/500000
+worker 7 INT: Inserted 10000 records in 357956.34ms 450000/500000
+worker 6 INT: Inserted 10000 records in 358192.12ms 450000/500000
+worker 8 INT: Inserted 10000 records in 357444.57ms 450000/500000
+worker 2 INT: Inserted 10000 records in 358117.71ms 450000/500000
+worker 5 INT: Inserted 10000 records in 357884.68ms 450000/500000
+worker 3 INT: Inserted 10000 records in 358687.76ms 450000/500000
+worker 1 INT: Inserted 10000 records in 355984.61ms 460000/500000
+worker 4 INT: Inserted 10000 records in 356162.23ms 460000/500000
+worker 0 INT: Inserted 10000 records in 356871.46ms 460000/500000
+worker 9 INT: Inserted 10000 records in 357328.54ms 460000/500000
+worker 7 INT: Inserted 10000 records in 356865.88ms 460000/500000
+worker 6 INT: Inserted 10000 records in 356763.04ms 460000/500000
+worker 8 INT: Inserted 10000 records in 357121.30ms 460000/500000
+worker 2 INT: Inserted 10000 records in 356630.11ms 460000/500000
+worker 5 INT: Inserted 10000 records in 357344.25ms 460000/500000
+worker 3 INT: Inserted 10000 records in 356343.65ms 460000/500000
+worker 1 INT: Inserted 10000 records in 358633.03ms 470000/500000
+worker 4 INT: Inserted 10000 records in 358132.28ms 470000/500000
+worker 0 INT: Inserted 10000 records in 357840.27ms 470000/500000
+worker 9 INT: Inserted 10000 records in 358971.42ms 470000/500000
+worker 7 INT: Inserted 10000 records in 359384.41ms 470000/500000
+worker 6 INT: Inserted 10000 records in 357795.64ms 470000/500000
+worker 8 INT: Inserted 10000 records in 359586.96ms 470000/500000
+worker 2 INT: Inserted 10000 records in 358560.45ms 470000/500000
+worker 3 INT: Inserted 10000 records in 358844.73ms 470000/500000
+worker 5 INT: Inserted 10000 records in 359766.67ms 470000/500000
+worker 1 INT: Inserted 10000 records in 356055.01ms 480000/500000
+worker 4 INT: Inserted 10000 records in 357147.48ms 480000/500000
+worker 0 INT: Inserted 10000 records in 356828.03ms 480000/500000
+worker 6 INT: Inserted 10000 records in 355693.56ms 480000/500000
+worker 9 INT: Inserted 10000 records in 356695.37ms 480000/500000
+worker 7 INT: Inserted 10000 records in 357462.74ms 480000/500000
+worker 8 INT: Inserted 10000 records in 356133.48ms 480000/500000
+worker 2 INT: Inserted 10000 records in 355891.78ms 480000/500000
+worker 3 INT: Inserted 10000 records in 357367.95ms 480000/500000
+worker 5 INT: Inserted 10000 records in 356906.15ms 480000/500000
+worker 1 INT: Inserted 10000 records in 356109.52ms 490000/500000
+worker 4 INT: Inserted 10000 records in 355386.68ms 490000/500000
+worker 0 INT: Inserted 10000 records in 356823.82ms 490000/500000
+worker 9 INT: Inserted 10000 records in 356100.79ms 490000/500000
+worker 6 INT: Inserted 10000 records in 356111.32ms 490000/500000
+worker 7 INT: Inserted 10000 records in 356710.81ms 490000/500000
+worker 8 INT: Inserted 10000 records in 355998.17ms 490000/500000
+worker 2 INT: Inserted 10000 records in 357253.50ms 490000/500000
+worker 5 INT: Inserted 10000 records in 356100.90ms 490000/500000
+worker 3 INT: Inserted 10000 records in 356959.71ms 490000/500000
+worker 1 INT: Inserted 10000 records in 356951.28ms 500000/500000
+worker 4 INT: Inserted 10000 records in 357853.68ms 500000/500000
+worker 0 INT: Inserted 10000 records in 357938.48ms 500000/500000
+worker 9 INT: Inserted 10000 records in 357469.52ms 500000/500000
+worker 6 INT: Inserted 10000 records in 357641.26ms 500000/500000
+worker 7 INT: Inserted 10000 records in 357460.03ms 500000/500000
+worker 8 INT: Inserted 10000 records in 357361.01ms 500000/500000
+worker 2 INT: Inserted 10000 records in 356589.67ms 500000/500000
+worker 5 INT: Inserted 10000 records in 356078.74ms 500000/500000
+worker 3 INT: Inserted 10000 records in 355741.32ms 500000/500000
+All records inserted successfully!
+INT experiment ended
+------------------------------------------------------------
+Stopping Docker Compose...
+Stopping experiment_db ... done
+Removing experiment_db ... done
+Removing network go-multithread-experement_default
+Docker Compose stopped
+Deleting Docker volume...
+go-multithread-experement_mysql-db
+Docker volume deleted
+UUIDV4: 2.2778657142937112e+08
+UUIDV7: 1.9779173582391223e+08
+INT: 1.7806181483761117e+08
+UUID V4 / UUID V7 percentage:  1.1516485786451782
+UUIDV4 collision count: 0
+UUIDV7 collision count: 0
+INT collision count: 0
+Ending experiment
