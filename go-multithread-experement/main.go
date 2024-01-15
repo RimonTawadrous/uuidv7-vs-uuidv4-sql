@@ -19,8 +19,8 @@ const (
 	volumeName  = "go-multithread-experement_mysql-db"
 
 	dbConnectionString      = "user:password@tcp(localhost:13306)/db"
-	numberOfRecordsToInsert = 5000000
-	numberOfWorkers         = 10
+	numberOfRecordsToInsert = 2000000
+	numberOfWorkers         = 7
 )
 
 func waitMySQLReady() {
