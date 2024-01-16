@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Welcome to the `uuidv7-vs-uuidv4-sql` project! This experiment aims to benchmark the insertion time of millions of records into MySQL using two different UUID versions: UUIDv7 and UUIDv4. The project leverages both Node.js and Go programming languages for the experiment. Before you begin, make sure your system meets the following requirements:
+Welcome to the `uuidv7-vs-uuidv4-sql` project! This experiment aims to benchmark the insertion time of millions of records into MySQL using two different UUID versions: UUIDv7 and UUIDv4. The project leverages both Node.js and Go programming languages for the experiment.
+
+More info can be found @ https://medium.com/@rimonadel01/why-uuid7-is-better-than-uuid4-as-clustered-index-edb02bf70056
 
 ## System Requirements
 
