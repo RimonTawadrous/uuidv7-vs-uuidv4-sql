@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"runtime"
 	"time"
 
 	"github.com/RimonTawadrous/uuidv7-vs-uuidv4-sql/intExprement"
@@ -178,6 +179,7 @@ func doIntExperiment() (float64, int) {
 }
 
 func main() {
+	runtime.GOMAXPROCS(7)
 	fmt.Println("Starting experiment")
 
 	fmt.Println("Cleaning up from previous runs...")
